@@ -47,7 +47,7 @@ export default function WellnessPage() {
           </div>
         </Section>
 
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
+        <div className="relative mb-14 aspect-[4/3] w-full overflow-hidden rounded-image md:mb-20">
           <Image
             src="/images/jk-herbal-garden.jpg"
             alt="Hands harvesting herbs in the campus herbal garden"

@@ -26,7 +26,7 @@ export default function InnovationPage() {
           <FeatureGrid features={innovation.features} />
         </Section>
 
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
+        <div className="relative mb-14 aspect-[4/3] w-full overflow-hidden rounded-image md:mb-20">
           <Image
             src="/images/jk-innovation-lab.jpg"
             alt="A startup incubation and innovation lab on campus"

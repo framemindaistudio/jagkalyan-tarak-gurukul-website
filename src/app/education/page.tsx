@@ -27,7 +27,7 @@ export default function EducationPage() {
           <FeatureGrid features={education.features} columns={3} />
         </Section>
 
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="mb-14 grid gap-6 sm:grid-cols-2 md:mb-20">
           <div className="relative aspect-[4/3] overflow-hidden rounded-image">
             <Image
               src="/images/jk-smart-classroom.jpg"
