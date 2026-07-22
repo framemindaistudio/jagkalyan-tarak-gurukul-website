@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
+/*
+  JagKalyan Tarak Gurukul — brand palette sampled directly from the client's
+  logo and poster material (forest green wordmark/leaves, gold sun-figure
+  mark, warm cream poster backgrounds). Green carries structure, text, and
+  navigation; gold is reserved for action (buttons, focus ring) so it stays
+  "the color that means act," not decoration. A deep maroon/brown from the
+  logo's "TARAK GURUKUL" wordmark is used only for small supporting details,
+  never as a primary UI color, to keep the palette from feeling cluttered.
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core surfaces — warm cream, sampled from both poster backgrounds */
+  --color-background: #fbf6ea;
+  --color-surface: #fdfbf4;
+  --color-surface-raised: #ffffff;
+  --color-foreground: #1c2617;
+  --color-muted-foreground: #5c6b57;
+
+  /* Brand: forest green, sampled from the logo's wordmark and leaves */
+  --color-primary: #0e4a12;
+  --color-primary-hover: #0a3a0d;
+  --color-on-primary: #f9f7f0;
+
+  /* Action: gold, sampled from the logo's sun-figure mark */
+  --color-accent: #e4ae14;
+  --color-accent-hover: #c6940a;
+  --color-on-accent: #201400;
+
+  /* Secondary: soft gold-tinted neutral, for subtle fills/badges */
+  --color-secondary: #f0e6c8;
+  --color-on-secondary: #1c2617;
+
+  --color-border: #e3dcc8;
+  --color-border-strong: #c9bfa0;
+
+  --color-destructive: #a3342a;
+  --color-on-destructive: #ffffff;
+  --color-success: #2f8b6b;
+
+  --color-ring: #e4ae14;
+
+  /* WhatsApp's own brand green — third-party marks stay in their official
+     color rather than tinted to the site palette. Used only for the
+     WhatsApp glyph/badge. */
+  --color-whatsapp: #25d366;
+  --color-whatsapp-hover: #1ebe57;
+  --color-on-whatsapp: #ffffff;
+
+  /* Shape consistency lock: pills for buttons, soft organic radius for cards/images/inputs */
+  --radius-button: 999px;
+  --radius-card: 24px;
+  --radius-image: 24px;
+  --radius-input: 12px;
 }
+
+/* Section rhythm: py-20 md:py-28 lg:py-32 everywhere (VISUAL_DENSITY: 3, airy by intent). */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-surface-raised: var(--color-surface-raised);
+  --color-foreground: var(--color-foreground);
+  --color-muted-foreground: var(--color-muted-foreground);
+
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-on-primary: var(--color-on-primary);
+
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-on-accent: var(--color-on-accent);
+
+  --color-secondary: var(--color-secondary);
+  --color-on-secondary: var(--color-on-secondary);
+
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+
+  --color-destructive: var(--color-destructive);
+  --color-on-destructive: var(--color-on-destructive);
+  --color-success: var(--color-success);
+
+  --color-ring: var(--color-ring);
+
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-hover: var(--color-whatsapp-hover);
+  --color-on-whatsapp: var(--color-on-whatsapp);
+
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+  --radius-image: var(--radius-image);
+  --radius-input: var(--radius-input);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-manrope);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-on-accent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

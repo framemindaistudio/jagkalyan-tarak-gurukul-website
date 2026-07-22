@@ -1,0 +1,87 @@
+import {
+  Leaf,
+  Heartbeat,
+  BookOpenText,
+  UsersThree,
+  Sparkle,
+  GraduationCap,
+  PersonSimpleTaiChi,
+  Plant,
+  House,
+  Flask,
+  Storefront,
+  TreeEvergreen,
+  Cow,
+  SunHorizon,
+  Drop,
+  ChalkboardTeacher,
+  Handshake,
+  HandHeart,
+  Ruler,
+  Buildings,
+  ArrowsHorizontal,
+  ArrowsVertical,
+  CloudRain,
+  Recycle,
+  ArrowsClockwise,
+  ChargingStation,
+  Lightbulb,
+  Monitor,
+  SpinnerGap,
+  Robot,
+  MusicNotes,
+  ForkKnife,
+  Rocket,
+  Drone,
+} from "@phosphor-icons/react/ssr";
+import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
+
+export const iconMap: Record<string, PhosphorIcon> = {
+  Leaf,
+  Heartbeat,
+  BookOpenText,
+  UsersThree,
+  Sparkle,
+  GraduationCap,
+  PersonSimpleTaiChi,
+  Plant,
+  House,
+  Flask,
+  Storefront,
+  TreeEvergreen,
+  Cow,
+  SunHorizon,
+  Drop,
+  ChalkboardTeacher,
+  Handshake,
+  HandHeart,
+  Ruler,
+  Buildings,
+  ArrowsHorizontal,
+  ArrowsVertical,
+  CloudRain,
+  Recycle,
+  ArrowsClockwise,
+  ChargingStation,
+  Lightbulb,
+  Monitor,
+  SpinnerGap,
+  Robot,
+  MusicNotes,
+  ForkKnife,
+  Rocket,
+  Drone,
+};
+
+export function Icon({
+  name,
+  size = 24,
+  className,
+}: {
+  name: string;
+  size?: number;
+  className?: string;
+}) {
+  const Comp = iconMap[name] ?? Sparkle;
+  return <Comp size={size} weight="duotone" className={className} />;
+}
