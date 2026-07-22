@@ -10,7 +10,7 @@ export const contact = {
   address: "Village Khanyale, Dodamarg Taluka, Sindhudurg District, Maharashtra",
   email: "connect@jagkalyan.org",
   phone: "+91 98200 12345",
-  parentSiteHref: "https://www.jagkalyan.com",
+  parentSiteHref: "https://www.jagkalyanholistic.com/",
 };
 
 export const coreValues = [
