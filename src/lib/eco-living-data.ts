@@ -12,6 +12,15 @@ export const plotStats = [
   { icon: "GridFour", value: "3,000", suffix: "", label: "Total planned plots" },
 ];
 
+export const scale = {
+  phase1: "1,000",
+  phase1Label: "Phase 1 plots",
+  total: "3,000",
+  totalLabel: "Total planned plots",
+  percent: 33,
+  progressLabel: "Phase 1 underway",
+};
+
 export const plotTypes = [
   {
     key: "500sqm",

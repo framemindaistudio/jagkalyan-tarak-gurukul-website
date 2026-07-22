@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { StatGrid } from "@/components/ui/stat-grid";
+import { ScaleShowcase } from "@/components/project/scale-showcase";
 import { FeatureGrid } from "@/components/ui/feature-grid";
 import { Icon } from "@/lib/icon-map";
 import {
   ecoLivingMeta,
-  plotStats,
+  scale,
   plotTypes,
   roads,
   amenities,
@@ -33,7 +33,7 @@ export default function EcoLivingPage() {
 
       <Container className="max-w-4xl">
         <Section id="scale" title="Scale">
-          <StatGrid stats={plotStats} />
+          <ScaleShowcase {...scale} />
         </Section>
 
         <div className="relative aspect-[4/5] w-full max-w-xl overflow-hidden rounded-image border border-border sm:mx-auto">
