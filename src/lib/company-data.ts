@@ -14,14 +14,14 @@ export const founders = [
     photo: "/images/founder-jagdish-kalyandurgmath.jpg",
   },
   {
-    name: "Dr. Kavita Kalyandurgmath",
-    role: "Co-Founder",
-    photo: "/images/founder-kavita-kalyandurgmath.jpg",
+    name: "Dr. Tarak Arolkar",
+    role: "Founding Member",
+    photo: "/images/founder-tarak-arolkar.jpg",
   },
   {
-    name: "Dr. Tarak Arolkar",
-    role: "Co-Founder",
-    photo: "/images/founder-tarak-arolkar.jpg",
+    name: "Kiran Sawant",
+    role: "Founding Member",
+    photo: "/images/founder-kiran-sawant.jpg",
   },
 ];
 
