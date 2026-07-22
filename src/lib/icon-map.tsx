@@ -33,6 +33,15 @@ import {
   ForkKnife,
   Rocket,
   Drone,
+  GridFour,
+  SoccerBall,
+  Basketball,
+  Garage,
+  Waves,
+  DoorOpen,
+  Binoculars,
+  Briefcase,
+  Lightning,
 } from "@phosphor-icons/react/ssr";
 import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
@@ -71,6 +80,15 @@ export const iconMap: Record<string, PhosphorIcon> = {
   ForkKnife,
   Rocket,
   Drone,
+  GridFour,
+  SoccerBall,
+  Basketball,
+  Garage,
+  Waves,
+  DoorOpen,
+  Binoculars,
+  Briefcase,
+  Lightning,
 };
 
 export function Icon({

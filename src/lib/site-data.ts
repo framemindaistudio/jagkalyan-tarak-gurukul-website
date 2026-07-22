@@ -7,10 +7,10 @@ export const siteMeta = {
 };
 
 export const contact = {
-  address: "Dodamarg, North of Goa",
+  address: "Village Khanyale, Dodamarg Taluka, Sindhudurg District, Maharashtra",
   email: "connect@jagkalyan.org",
   phone: "+91 98200 12345",
-  parentSiteHref: "https://www.jagkalyan.org",
+  parentSiteHref: "https://www.jagkalyan.com",
 };
 
 export const coreValues = [
@@ -31,6 +31,7 @@ type NavLink = {
 export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
   { label: "Vision & Founders", href: "/vision" },
   { label: "The Campus", href: "/campus" },
+  { label: "Eco Living", href: "/eco-living" },
   {
     label: "The Ecosystem",
     href: "/education",
@@ -60,6 +61,7 @@ export const footerColumns = [
     links: [
       { label: "Vision & Founders", href: "/vision" },
       { label: "The Campus", href: "/campus" },
+      { label: "Eco Living", href: "/eco-living" },
       { label: "Gallery", href: "/gallery" },
     ],
   },

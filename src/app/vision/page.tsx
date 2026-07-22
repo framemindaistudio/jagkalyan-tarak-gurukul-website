@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ArrowSquareOut } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { vision, mission, originStory, founders, foundersNote } from "@/lib/company-data";
-import { coreValues } from "@/lib/site-data";
+import { coreValues, contact } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Vision & Founders | JagKalyan Tarak Gurukul",
@@ -37,6 +38,15 @@ export default function VisionPage() {
               <p className="text-sm leading-relaxed text-muted-foreground">{mission}</p>
             </div>
           </div>
+          <a
+            href={contact.parentSiteHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-fit items-center gap-1.5 text-sm font-medium text-primary hover:text-primary-hover"
+          >
+            Visit JagKalyan Holistic Mission
+            <ArrowSquareOut size={16} />
+          </a>
         </Section>
 
         <Section id="values" title="Core Values">
