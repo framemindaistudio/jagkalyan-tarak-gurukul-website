@@ -9,8 +9,8 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[85dvh] items-end overflow-hidden bg-foreground">
       <Image
-        src="/images/jk-hero-campus-aerial.jpg"
-        alt="Aerial view of the JagKalyan Tarak Gurukul campus master plan at golden hour"
+        src="/images/jk-hero-campus-plaza.jpg"
+        alt="The JagKalyan Tarak Gurukul campus at golden hour: the central domed pavilion and fountain plaza, flanked by terracotta-roofed buildings and framed by forested hills"
         fill
         priority
         sizes="100vw"

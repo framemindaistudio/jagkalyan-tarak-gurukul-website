@@ -12,6 +12,10 @@ export const metadata: Metadata = {
 
 const images: Record<string, Array<{ src: string; alt: string }>> = {
   campus: [
+    {
+      src: "/images/jk-hero-campus-plaza.jpg",
+      alt: "The central domed pavilion and fountain plaza at golden hour",
+    },
     { src: "/images/jk-hero-campus-aerial.jpg", alt: "Aerial view of the campus master plan" },
     { src: "/images/jk-grand-entrance.jpg", alt: "The monumental campus entrance gate" },
     { src: "/images/jk-main-building-exterior.jpg", alt: "The main campus building exterior" },
