@@ -28,13 +28,13 @@ type NavLink = {
   href: string;
 };
 
-export const primaryNav: Array<NavLink & { children?: NavLink[] }> = [
+export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
   { label: "Vision & Founders", href: "/vision" },
   { label: "The Campus", href: "/campus" },
   {
     label: "The Ecosystem",
     href: "/education",
-    children: [
+    items: [
       { label: "Holistic Education", href: "/education" },
       { label: "Wellness & Sustainable Living", href: "/wellness" },
       { label: "Innovation & Entrepreneurship", href: "/innovation" },
