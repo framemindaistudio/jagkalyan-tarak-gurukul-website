@@ -16,18 +16,23 @@ export function Navbar() {
       <Container className="flex h-[72px] items-center justify-between gap-6">
         <Link
           href="/"
-          className="shrink-0"
+          className="flex shrink-0 items-center gap-2.5"
           onClick={() => setMobileOpen(false)}
           aria-label="JagKalyan Tarak Gurukul, home"
         >
           <Image
-            src="/images/logo.png"
-            alt="JagKalyan Tarak Gurukul"
-            width={200}
-            height={181}
+            src="/images/logo-icon.png"
+            alt=""
+            width={576}
+            height={300}
             priority
-            className="h-12 w-auto"
+            className="h-9 w-auto"
           />
+          <span className="hidden font-display text-base leading-tight tracking-tight text-foreground sm:block">
+            JagKalyan
+            <br />
+            Tarak Gurukul
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">

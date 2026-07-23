@@ -3,6 +3,8 @@ import { Fraunces, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { Chatbot } from "@/components/layout/chatbot";
+import { chatbotConfig } from "@/lib/chatbot-data";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -36,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Chatbot config={chatbotConfig} />
       </body>
     </html>
   );

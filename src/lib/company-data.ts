@@ -10,7 +10,7 @@ export const originStory =
 export const founders = [
   {
     name: "Dr. Jagdish Kalyandurgmath",
-    role: "Founder, JagKalyan Holistic Mission",
+    role: "Founding Member",
     photo: "/images/founder-jagdish-kalyandurgmath.jpg",
   },
   {

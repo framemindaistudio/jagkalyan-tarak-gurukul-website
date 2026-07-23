@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { StatGrid } from "@/components/ui/stat-grid";
+import { VideoMarquee } from "@/components/sections/video-marquee";
 import { Icon } from "@/lib/icon-map";
 import {
   campusStats,
@@ -161,6 +162,13 @@ export default function CampusPage() {
             {futureExpansion.area} of temporary, modular buildings, planned to grow with the campus.
           </p>
           <TagList items={futureExpansion.items} />
+        </Section>
+
+        <Section id="progress" title="Progress on the Ground">
+          <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            Raw clips from the site as work moves forward, unedited and posted as they come in.
+          </p>
+          <VideoMarquee />
         </Section>
       </Container>
     </>
