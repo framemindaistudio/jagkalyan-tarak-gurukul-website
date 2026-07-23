@@ -43,7 +43,6 @@ export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
     ],
   },
   { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/get-involved" },
 ];
 
 export const footerColumns = [
