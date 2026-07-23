@@ -41,41 +41,49 @@ export const amenities = [
     icon: "SoccerBall",
     title: "Cricket Stadium",
     body: "A dedicated cricket stadium across 5 acres.",
+    image: "/images/jk-amenity-cricket-stadium.jpg",
   },
   {
     icon: "Basketball",
     title: "Sports Centre",
     body: "A shared sports centre for residents.",
+    image: "/images/jk-amenity-sports-centre.jpg",
   },
   {
     icon: "Storefront",
     title: "Shopping Centre",
     body: "Everyday retail within the scheme itself.",
+    image: "/images/jk-amenity-shopping-centre.jpg",
   },
   {
     icon: "Garage",
     title: "Amenities & Parking",
     body: "A dedicated amenities and parking zone across 5.5 acres.",
+    image: "/images/jk-amenity-parking.jpg",
   },
   {
     icon: "Waves",
     title: "Water Body",
     body: "A landscaped water body at the heart of the scheme.",
+    image: "/images/jk-amenity-water-body.jpg",
   },
   {
     icon: "DoorOpen",
     title: "Decorative Entrance Gate",
     body: "A monumental gated entrance to the scheme.",
+    image: "/images/jk-grand-entrance.jpg",
   },
   {
     icon: "Binoculars",
     title: "Watch Towers",
     body: "Four watch towers positioned around the scheme's perimeter for security.",
+    image: "/images/jk-amenity-watch-tower.jpg",
   },
   {
     icon: "Buildings",
     title: "JTG Complex",
     body: "Directly adjoining the JagKalyan Tarak Gurukul campus itself.",
+    image: "/images/jk-main-building-exterior.jpg",
   },
 ];
 

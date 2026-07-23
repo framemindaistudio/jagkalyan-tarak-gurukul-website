@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { ScaleShowcase } from "@/components/project/scale-showcase";
-import { FeatureGrid } from "@/components/ui/feature-grid";
+import { AmenityGrid } from "@/components/project/amenity-grid";
 import { Icon } from "@/lib/icon-map";
 import {
   ecoLivingMeta,
@@ -70,7 +70,7 @@ export default function EcoLivingPage() {
         </Section>
 
         <Section id="amenities" title="Amenities">
-          <FeatureGrid features={amenities} columns={3} />
+          <AmenityGrid amenities={amenities} />
         </Section>
 
         <Section id="infrastructure" title="Infrastructure">
