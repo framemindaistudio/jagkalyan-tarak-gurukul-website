@@ -11,16 +11,43 @@ const interestOptions = [
   "General enquiry",
 ];
 
+// Submits directly to the JagKalyan Tarak Gurukul Google Form (entry IDs read
+// from that form's own field markup) so responses land in its linked Sheet.
+const GOOGLE_FORM_ACTION =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeBEZgv6EVBmFRfXRur-7uEBiGo8PRQpYv_z5QEMYByvmgq0A/formResponse";
+const ENTRY = {
+  name: "entry.580991646",
+  email: "entry.459773257",
+  interest: "entry.1424122163",
+  message: "entry.913742066",
+};
+
 const inputClasses =
   "h-11 w-full rounded-input border border-border-strong bg-surface-raised px-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground/70 focus-visible:border-primary";
 
 export function GetInvolvedForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "submitted">("idle");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("submitting");
-    window.setTimeout(() => setStatus("submitted"), 500);
+
+    const form = new FormData(e.currentTarget);
+    const data = new FormData();
+    data.append(ENTRY.name, String(form.get("name") ?? ""));
+    data.append(ENTRY.email, String(form.get("email") ?? ""));
+    data.append(ENTRY.interest, String(form.get("interest") ?? ""));
+    data.append(ENTRY.message, String(form.get("message") ?? ""));
+
+    try {
+      // Google's formResponse endpoint doesn't send CORS headers, so the
+      // response is opaque; no-cors is the standard way to post to it
+      // from a browser without the request being blocked outright.
+      await fetch(GOOGLE_FORM_ACTION, { method: "POST", mode: "no-cors", body: data });
+    } catch (err) {
+      console.error("Get involved form submission failed", err);
+    }
+    setStatus("submitted");
   }
 
   if (status === "submitted") {
