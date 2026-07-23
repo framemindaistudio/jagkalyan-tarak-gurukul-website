@@ -7,7 +7,7 @@ import { siteMeta } from "@/lib/site-data";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[92dvh] items-end overflow-hidden bg-foreground">
+    <section className="relative flex min-h-[80dvh] items-center overflow-hidden bg-foreground">
       <Image
         src="/images/jk-hero-campus-plaza.jpg"
         alt="The JagKalyan Tarak Gurukul campus at golden hour: the central domed pavilion and fountain plaza, flanked by terracotta-roofed buildings and framed by forested hills"
@@ -16,9 +16,10 @@ export function Hero() {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/45 to-foreground/10" />
+      <div className="absolute inset-0 bg-foreground/55" />
+      <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-transparent to-foreground/20" />
 
-      <Container className="relative z-10 pb-24 pt-32">
+      <Container className="relative z-10 py-14 md:py-20">
         <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
           <span className="text-sm font-medium text-on-primary/70">
             {siteMeta.location}
