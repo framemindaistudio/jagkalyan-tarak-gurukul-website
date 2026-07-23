@@ -108,6 +108,6 @@ export const chatbotConfig: ChatbotConfig = {
         "As a student, a mentor, a partner, or a founding supporter. Use the Get Involved page or Enquire Now below and the team will follow up directly.",
     },
   ],
-  enquireHref: "/get-involved",
+  enquireHref: "https://docs.google.com/forms/d/e/1FAIpQLSeBEZgv6EVBmFRfXRur-7uEBiGo8PRQpYv_z5QEMYByvmgq0A/viewform",
   whatsappHref: "https://wa.me/919820012345",
 };
