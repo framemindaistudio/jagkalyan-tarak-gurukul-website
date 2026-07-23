@@ -23,8 +23,8 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt="JagKalyan Tarak Gurukul"
-            width={600}
-            height={543}
+            width={700}
+            height={655}
             priority
             className="h-16 w-auto"
           />

@@ -13,8 +13,8 @@ export function Footer() {
             <Image
               src="/images/logo.png"
               alt="JagKalyan Tarak Gurukul"
-              width={600}
-              height={543}
+              width={700}
+              height={655}
               className="h-20 w-auto"
             />
           </div>
