@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Chatbot } from "@/components/layout/chatbot";
 import { chatbotConfig } from "@/lib/chatbot-data";
+import { FloatingDock } from "@/components/layout/floating-dock";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -54,6 +55,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingDock />
         <Chatbot config={chatbotConfig} />
       </body>
     </html>

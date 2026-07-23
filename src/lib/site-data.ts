@@ -29,6 +29,7 @@ type NavLink = {
 };
 
 export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
+  { label: "Home", href: "/" },
   { label: "Vision & Founders", href: "/vision" },
   { label: "The Campus", href: "/campus" },
   { label: "Eco Living", href: "/eco-living" },
