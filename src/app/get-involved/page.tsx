@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
+import { EnvelopeSimple, Phone, MapPin } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { Icon } from "@/lib/icon-map";
 import { GetInvolvedForm } from "@/components/sections/get-involved-form";
-import { getInvolvedOptions } from "@/lib/site-data";
+import { getInvolvedOptions, contact } from "@/lib/site-data";
 
 export const metadata: Metadata = {
   title: "Get Involved | JagKalyan Tarak Gurukul",
   description:
-    "Become a student, mentor, partner, or founding supporter of JagKalyan Tarak Gurukul, an integrated campus for holistic education, wellness, and eco-living.",
+    "Get in touch, or become a student, mentor, partner, or founding supporter of JagKalyan Tarak Gurukul, an integrated campus for holistic education, wellness, and eco-living.",
 };
 
 export default function GetInvolvedPage() {
@@ -41,7 +42,27 @@ export default function GetInvolvedPage() {
         </Section>
 
         <Section id="contact-form" title="Send a Message">
-          <div className="max-w-xl">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
+            <div className="flex flex-col gap-4">
+              <a
+                href={`tel:${contact.phone.replace(/\s/g, "")}`}
+                className="flex items-center gap-3 rounded-card border border-border bg-surface-raised p-5 transition-colors hover:border-primary"
+              >
+                <Phone size={20} className="shrink-0 text-primary" />
+                <span className="text-sm font-medium">{contact.phone}</span>
+              </a>
+              <a
+                href={`mailto:${contact.email}`}
+                className="flex items-center gap-3 rounded-card border border-border bg-surface-raised p-5 transition-colors hover:border-primary"
+              >
+                <EnvelopeSimple size={20} className="shrink-0 text-primary" />
+                <span className="text-sm font-medium">{contact.email}</span>
+              </a>
+              <div className="flex items-center gap-3 rounded-card border border-border bg-surface-raised p-5">
+                <MapPin size={20} className="shrink-0 text-primary" />
+                <span className="text-sm font-medium">{contact.address}</span>
+              </div>
+            </div>
             <GetInvolvedForm />
           </div>
         </Section>
