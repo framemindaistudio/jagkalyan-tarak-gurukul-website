@@ -19,9 +19,25 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.jagkalyantarakgurukul.com"),
   title: "JagKalyan Tarak Gurukul | Where Ancient Wisdom Meets Future Innovation",
   description:
     "An integrated campus for holistic education, wellness, research, and eco-living in Dodamarg, North Goa, a joint initiative of JagKalyan Holistic Mission and Saiccha Developers.",
+  openGraph: {
+    title: "JagKalyan Tarak Gurukul | Where Ancient Wisdom Meets Future Innovation",
+    description:
+      "An integrated campus for holistic education, wellness, research, and eco-living in Dodamarg, North Goa, a joint initiative of JagKalyan Holistic Mission and Saiccha Developers.",
+    url: "/",
+    siteName: "JagKalyan Tarak Gurukul",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JagKalyan Tarak Gurukul | Where Ancient Wisdom Meets Future Innovation",
+    description:
+      "An integrated campus for holistic education, wellness, research, and eco-living in Dodamarg, North Goa, a joint initiative of JagKalyan Holistic Mission and Saiccha Developers.",
+  },
 };
 
 export default function RootLayout({
