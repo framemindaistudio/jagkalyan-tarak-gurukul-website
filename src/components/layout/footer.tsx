@@ -13,7 +13,7 @@ export function Footer() {
             <Image
               src="/images/logo-icon.png"
               alt=""
-              width={576}
+              width={518}
               height={300}
               className="h-10 w-auto"
             />

@@ -23,7 +23,7 @@ export function Navbar() {
           <Image
             src="/images/logo-icon.png"
             alt=""
-            width={576}
+            width={518}
             height={300}
             priority
             className="h-9 w-auto"
