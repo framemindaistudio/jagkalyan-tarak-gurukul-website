@@ -36,11 +36,12 @@ export default function EcoLivingPage() {
           <ScaleShowcase {...scale} />
         </Section>
 
-        <div className="relative aspect-[4/5] w-full max-w-xl overflow-hidden rounded-image border border-border sm:mx-auto">
+        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image border border-border">
           <Image
-            src="/images/eco-living-concept-layout.jpg"
-            alt="Concept layout for JagKalyan Tarak Gurukul and the plotted eco-living scheme at Village Khanyale, Dodamarg Taluka, Sindhudurg District"
+            src="/images/eco-living-layout-3d.jpg"
+            alt="3D layout render of JagKalyan Tarak Gurukul and the plotted eco-living scheme at Village Khanyale, Dodamarg Taluka, Sindhudurg District"
             fill
+            sizes="(min-width: 640px) 896px, 100vw"
             className="object-contain bg-surface-raised"
           />
         </div>

@@ -18,7 +18,6 @@ export type ChatbotConfig = {
   topicsIntro: string;
   topics: ChatTopic[];
   faqs: ChatFaq[];
-  enquireHref: string;
   whatsappHref: string;
 };
 
@@ -105,9 +104,8 @@ export const chatbotConfig: ChatbotConfig = {
       id: "get-involved",
       question: "How do I get involved?",
       answer:
-        "As a student, a mentor, a partner, or a founding supporter. Use the Get Involved page or Enquire Now below and the team will follow up directly.",
+        "As a student, a mentor, a partner, or a founding supporter. Use the Get Involved page and the team will follow up directly.",
     },
   ],
-  enquireHref: "https://docs.google.com/forms/d/e/1FAIpQLSeBEZgv6EVBmFRfXRur-7uEBiGo8PRQpYv_z5QEMYByvmgq0A/viewform",
   whatsappHref: "https://wa.me/919820012345",
 };

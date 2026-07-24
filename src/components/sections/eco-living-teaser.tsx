@@ -24,10 +24,10 @@ export function EcoLivingTeaser() {
             <ArrowRight size={16} />
           </Button>
         </Reveal>
-        <Reveal delay={0.1} className="relative aspect-[4/5] overflow-hidden rounded-image border border-border">
+        <Reveal delay={0.1} className="relative aspect-[4/3] overflow-hidden rounded-image border border-border">
           <Image
-            src="/images/eco-living-concept-layout.jpg"
-            alt="Concept layout for the Eco Living plotted scheme beside JagKalyan Tarak Gurukul"
+            src="/images/eco-living-layout-3d.jpg"
+            alt="3D layout render of the Eco Living plotted scheme beside JagKalyan Tarak Gurukul"
             fill
             className="bg-surface-raised object-contain"
           />
