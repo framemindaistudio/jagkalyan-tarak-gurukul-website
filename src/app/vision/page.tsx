@@ -63,7 +63,7 @@ export default function VisionPage() {
         </Section>
 
         <Section id="founders" title="Founders">
-          <div className="grid gap-8 sm:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-3">
             {founders.map((founder) => (
               <div key={founder.name} className="flex flex-col items-center gap-4 text-center">
                 <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-border">
@@ -73,6 +73,45 @@ export default function VisionPage() {
                   <span className="text-base font-medium tracking-tight">{founder.name}</span>
                   <span className="text-sm text-muted-foreground">{founder.role}</span>
                 </div>
+                {founder.orgLinks ? (
+                  <div className="flex flex-wrap items-start justify-center gap-4 pt-1">
+                    {founder.orgLinks.map((org) =>
+                      org.logo && org.href ? (
+                        <a
+                          key={org.name}
+                          href={org.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex flex-col items-center gap-2"
+                        >
+                          <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-border bg-surface-raised p-3 shadow-sm transition-all duration-200 group-hover:-translate-y-1 group-hover:border-primary group-hover:shadow-md sm:h-24 sm:w-24">
+                            <Image
+                              src={org.logo}
+                              alt={org.name}
+                              width={80}
+                              height={80}
+                              className="h-full w-full object-contain"
+                            />
+                          </span>
+                          <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
+                            {org.name}
+                          </span>
+                        </a>
+                      ) : (
+                        <div key={org.name} className="flex flex-col items-center gap-2">
+                          <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-dashed border-border-strong sm:h-24 sm:w-24">
+                            <span className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
+                              Soon
+                            </span>
+                          </span>
+                          <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
+                            {org.name}
+                          </span>
+                        </div>
+                      ),
+                    )}
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>
