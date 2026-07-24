@@ -67,14 +67,22 @@ export function AmenityGrid({ amenities }: { amenities: Amenity[] }) {
             key={amenity.title}
             type="button"
             onClick={() => open(amenity.title)}
-            className="group flex cursor-pointer flex-col gap-3 rounded-card border border-border bg-surface-raised p-6 text-left transition-colors hover:border-primary/40"
+            className="group relative flex cursor-pointer flex-col gap-3 overflow-hidden rounded-card border border-border bg-surface-raised p-6 text-left transition-colors hover:border-primary/40"
             aria-haspopup="dialog"
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-primary">
+            <Image
+              src={amenity.image}
+              alt=""
+              fill
+              aria-hidden="true"
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover opacity-30 transition-opacity duration-200 group-hover:opacity-40"
+            />
+            <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-primary">
               <Icon name={amenity.icon} size={20} />
             </div>
-            <h3 className="text-base font-medium tracking-tight">{amenity.title}</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">{amenity.body}</p>
+            <h3 className="relative z-10 text-base font-medium tracking-tight">{amenity.title}</h3>
+            <p className="relative z-10 text-sm leading-relaxed text-muted-foreground">{amenity.body}</p>
           </button>
         ))}
       </div>

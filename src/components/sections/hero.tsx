@@ -13,8 +13,18 @@ export function Hero() {
           muted
           loop
           playsInline
+          aria-hidden="true"
+          className="absolute inset-0 h-full w-full scale-110 object-cover opacity-60 blur-2xl"
+        >
+          <source src="/videos/jk-hero-flythrough.mp4" type="video/mp4" />
+        </video>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           poster="/images/jk-hero-flythrough-poster.jpg"
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain"
         >
           <source src="/videos/jk-hero-flythrough.mp4" type="video/mp4" />
         </video>
