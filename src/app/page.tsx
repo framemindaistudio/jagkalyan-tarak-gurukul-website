@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { PillarsSection } from "@/components/sections/pillars-section";
+import { FlythroughShowcase } from "@/components/sections/flythrough-showcase";
 import { EcosystemStrip } from "@/components/sections/ecosystem-strip";
 import { EcoLivingTeaser } from "@/components/sections/eco-living-teaser";
 import { VisionTeaser } from "@/components/sections/vision-teaser";
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Hero />
       <PillarsSection />
+      <FlythroughShowcase />
       <EcosystemStrip />
       <EcoLivingTeaser />
       <VisionTeaser />
