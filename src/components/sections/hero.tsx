@@ -7,7 +7,7 @@ import { siteMeta } from "@/lib/site-data";
 export function Hero() {
   return (
     <>
-      <section className="relative h-[70dvh] w-full overflow-hidden bg-foreground md:h-[85dvh]">
+      <section className="relative h-[calc(100dvh-73px)] w-full overflow-hidden bg-foreground">
         <video
           autoPlay
           muted
