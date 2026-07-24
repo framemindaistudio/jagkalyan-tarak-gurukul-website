@@ -23,18 +23,21 @@ export const scale = {
 
 export const plotTypes = [
   {
-    key: "500sqm",
+    icon: "Ruler",
     title: "500 sq.m Plots",
     body: "The larger plot format, laid out along the scheme's main internal roads.",
   },
   {
-    key: "150sqm",
+    icon: "House",
     title: "150 sq.m Plots",
     body: "A compact plot format for buyers seeking a smaller, more affordable footprint.",
   },
 ];
 
-export const roads = ["15.0 m wide roads", "12.0 m wide roads"];
+export const roads = [
+  { icon: "Path", label: "15.0 m wide roads" },
+  { icon: "Path", label: "12.0 m wide roads" },
+];
 
 export const amenities = [
   {

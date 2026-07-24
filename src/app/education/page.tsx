@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { FeatureGrid } from "@/components/ui/feature-grid";
+import { IconRevealGrid } from "@/components/ui/icon-reveal-grid";
 import { education } from "@/lib/content-data";
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function EducationPage() {
 
       <Container className="max-w-4xl">
         <Section id="approach" title="A Curriculum for the Whole Person">
-          <FeatureGrid features={education.features} columns={3} />
+          <IconRevealGrid items={education.features} columns={3} />
         </Section>
 
         <div className="mb-14 grid gap-6 sm:grid-cols-2 md:mb-20">

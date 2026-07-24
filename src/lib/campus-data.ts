@@ -18,38 +18,38 @@ export const mainBuilding = {
       name: "Ground Floor",
       area: "1,500 sq.m",
       facilities: [
-        "Grand Reception",
-        "Administrative Office",
-        "Board Room",
-        "Exhibition Gallery",
-        "Auditorium",
-        "Dining Hall",
-        "Kitchen",
-        "Medical Centre",
+        { icon: "DoorOpen", label: "Grand Reception" },
+        { icon: "Briefcase", label: "Administrative Office" },
+        { icon: "UsersThree", label: "Board Room" },
+        { icon: "Image", label: "Exhibition Gallery" },
+        { icon: "Microphone", label: "Auditorium" },
+        { icon: "ForkKnife", label: "Dining Hall" },
+        { icon: "CookingPot", label: "Kitchen" },
+        { icon: "FirstAidKit", label: "Medical Centre" },
       ],
     },
     {
       name: "First Floor",
       area: "1,300 sq.m",
       facilities: [
-        "Library & Knowledge Centre",
-        "Digital Learning Centre",
-        "Innovation Lab",
-        "Research Centre",
-        "Faculty Rooms",
-        "Meeting Rooms",
+        { icon: "BookOpenText", label: "Library & Knowledge Centre" },
+        { icon: "Monitor", label: "Digital Learning Centre" },
+        { icon: "Flask", label: "Innovation Lab" },
+        { icon: "Microscope", label: "Research Centre" },
+        { icon: "ChalkboardTeacher", label: "Faculty Rooms" },
+        { icon: "UsersThree", label: "Meeting Rooms" },
       ],
     },
     {
       name: "Second Floor",
       area: "1,200 sq.m",
       facilities: [
-        "Meditation Hall",
-        "Yoga Hall",
-        "Conference Hall",
-        "Skill Training Rooms",
-        "Spiritual Wisdom Centre",
-        "VIP Suites",
+        { icon: "PersonSimpleTaiChi", label: "Meditation Hall" },
+        { icon: "Plant", label: "Yoga Hall" },
+        { icon: "Microphone", label: "Conference Hall" },
+        { icon: "GraduationCap", label: "Skill Training Rooms" },
+        { icon: "HandHeart", label: "Spiritual Wisdom Centre" },
+        { icon: "Star", label: "VIP Suites" },
       ],
     },
   ],
@@ -61,14 +61,14 @@ export const residentialBuildings = {
   eachArea: "600 sq.m",
   totalArea: "3,600 sq.m",
   uses: [
-    "Students Living",
-    "Faculty Residence",
-    "Aaharshala (dining)",
-    "Students Activity Centre",
-    "Arogyashala (health)",
-    "Natural Nutrition Centre",
-    "Skill Development Centre",
-    "Research & Innovation Centre",
+    { icon: "House", label: "Students Living" },
+    { icon: "Buildings", label: "Faculty Residence" },
+    { icon: "ForkKnife", label: "Aaharshala (dining)" },
+    { icon: "UsersThree", label: "Students Activity Centre" },
+    { icon: "Heartbeat", label: "Arogyashala (health)" },
+    { icon: "Carrot", label: "Natural Nutrition Centre" },
+    { icon: "GraduationCap", label: "Skill Development Centre" },
+    { icon: "Flask", label: "Research & Innovation Centre" },
   ],
 };
 
@@ -78,33 +78,33 @@ export const utilityBuildings = {
   eachArea: "100 sq.m",
   totalArea: "400 sq.m",
   uses: [
-    "Security Office",
-    "Electrical Room",
-    "Telecom Room",
-    "Maintenance Office",
-    "Store Room",
-    "Food Courts",
-    "Wash Rooms",
-    "Horticulture Office",
+    { icon: "ShieldCheck", label: "Security Office" },
+    { icon: "Lightning", label: "Electrical Room" },
+    { icon: "WifiHigh", label: "Telecom Room" },
+    { icon: "Wrench", label: "Maintenance Office" },
+    { icon: "Package", label: "Store Room" },
+    { icon: "ForkKnife", label: "Food Courts" },
+    { icon: "Drop", label: "Wash Rooms" },
+    { icon: "Plant", label: "Horticulture Office" },
   ],
 };
 
 export const grandEntrance = [
-  "Monumental Gate",
-  "Security Check",
-  "Visitor Parking",
-  "Digital Display",
-  "Reception Plaza",
+  { icon: "DoorOpen", label: "Monumental Gate" },
+  { icon: "ShieldCheck", label: "Security Check" },
+  { icon: "Garage", label: "Visitor Parking" },
+  { icon: "Monitor", label: "Digital Display" },
+  { icon: "Path", label: "Reception Plaza" },
 ];
 
 export const sustainableInfrastructure = {
   landscape: [
-    "Native trees",
-    "Fruit orchard",
-    "Medicinal plants",
-    "Bamboo plantation",
-    "Flower gardens",
-    "Butterfly garden",
+    { icon: "TreeEvergreen", label: "Native trees" },
+    { icon: "TreeEvergreen", label: "Fruit orchard" },
+    { icon: "Plant", label: "Medicinal plants" },
+    { icon: "TreeEvergreen", label: "Bamboo plantation" },
+    { icon: "Sparkle", label: "Flower gardens" },
+    { icon: "Butterfly", label: "Butterfly garden" },
   ],
   greenInfrastructure: [
     { icon: "SunHorizon", label: "Solar Power Plant" },
@@ -119,18 +119,34 @@ export const sustainableInfrastructure = {
 };
 
 export const roads = [
-  "12 m Main Road",
-  "6 m Internal Roads",
-  "Walking Track",
-  "Cycling Track",
-  "Disabled-friendly pathways",
+  { icon: "Path", label: "12 m Main Road" },
+  { icon: "Path", label: "6 m Internal Roads" },
+  { icon: "PersonSimpleWalk", label: "Walking Track" },
+  { icon: "Bicycle", label: "Cycling Track" },
+  { icon: "HandHeart", label: "Disabled-friendly pathways" },
 ];
 
-export const waterFeatures = ["Central Fountain", "Lotus Pond", "Water Bodies", "Recharge Pits"];
+export const waterFeatures = [
+  { icon: "Drop", label: "Central Fountain" },
+  { icon: "FlowerLotus", label: "Lotus Pond" },
+  { icon: "Waves", label: "Water Bodies" },
+  { icon: "CloudRain", label: "Recharge Pits" },
+];
 
-export const parking = ["Visitors", "Staff", "Students", "Electric Vehicle Charging"];
+export const parking = [
+  { icon: "Garage", label: "Visitors" },
+  { icon: "Briefcase", label: "Staff" },
+  { icon: "GraduationCap", label: "Students" },
+  { icon: "ChargingStation", label: "Electric Vehicle Charging" },
+];
 
 export const futureExpansion = {
   area: "4,000 sq.m",
-  items: ["Modular structures", "Training halls", "Dormitories", "Workshops", "Startup incubation"],
+  items: [
+    { icon: "GridFour", label: "Modular structures" },
+    { icon: "ChalkboardTeacher", label: "Training halls" },
+    { icon: "House", label: "Dormitories" },
+    { icon: "Wrench", label: "Workshops" },
+    { icon: "Rocket", label: "Startup incubation" },
+  ],
 };

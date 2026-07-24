@@ -14,13 +14,13 @@ export const contact = {
 };
 
 export const coreValues = [
-  "Wellness",
-  "Wisdom",
-  "Welfare",
-  "Wealth",
-  "Harmony",
-  "Sustainability",
-  "Service",
+  { icon: "Heartbeat", label: "Wellness" },
+  { icon: "BookOpenText", label: "Wisdom" },
+  { icon: "HandHeart", label: "Welfare" },
+  { icon: "TrendUp", label: "Wealth" },
+  { icon: "Handshake", label: "Harmony" },
+  { icon: "Leaf", label: "Sustainability" },
+  { icon: "UsersThree", label: "Service" },
 ];
 
 type NavLink = {

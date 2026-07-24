@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { FeatureGrid } from "@/components/ui/feature-grid";
+import { IconRevealGrid } from "@/components/ui/icon-reveal-grid";
 import { innovation } from "@/lib/content-data";
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function InnovationPage() {
 
       <Container className="max-w-4xl">
         <Section id="approach" title="From Concept to Enterprise">
-          <FeatureGrid features={innovation.features} />
+          <IconRevealGrid items={innovation.features} />
         </Section>
 
         <div className="relative mb-14 aspect-[4/3] w-full overflow-hidden rounded-image md:mb-20">

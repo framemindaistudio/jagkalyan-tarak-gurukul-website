@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
+import { IconTileGrid } from "@/components/ui/icon-tile-grid";
 import { community } from "@/lib/content-data";
 
 export const metadata: Metadata = {
@@ -10,21 +11,6 @@ export const metadata: Metadata = {
   description:
     "Community and seva at JagKalyan Tarak Gurukul: JagKalyan Seva Udyan (Nandi Seva Park), a place of compassion, care, and dignity for all.",
 };
-
-function TagList({ items }: { items: string[] }) {
-  return (
-    <div className="flex flex-wrap gap-2">
-      {items.map((item) => (
-        <span
-          key={item}
-          className="rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-medium text-foreground/80"
-        >
-          {item}
-        </span>
-      ))}
-    </div>
-  );
-}
 
 export default function CommunityPage() {
   return (
@@ -58,11 +44,11 @@ export default function CommunityPage() {
         </Section>
 
         <Section id="who-we-serve" title="To Serve the Needy">
-          <TagList items={community.sevaUdyan.servingGroups} />
+          <IconTileGrid items={community.sevaUdyan.servingGroups} />
         </Section>
 
         <Section id="facilities" title="Facilities">
-          <TagList items={community.sevaUdyan.facilities} />
+          <IconTileGrid items={community.sevaUdyan.facilities} />
         </Section>
       </Container>
     </>

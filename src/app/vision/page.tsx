@@ -4,6 +4,7 @@ import { ArrowSquareOut } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
+import { IconTileGrid } from "@/components/ui/icon-tile-grid";
 import { vision, mission, originStory, founders, foundersNote } from "@/lib/company-data";
 import { coreValues, contact } from "@/lib/site-data";
 
@@ -50,16 +51,7 @@ export default function VisionPage() {
         </Section>
 
         <Section id="values" title="Core Values">
-          <div className="flex flex-wrap gap-3">
-            {coreValues.map((value) => (
-              <span
-                key={value}
-                className="rounded-full border border-border-strong bg-surface-raised px-4 py-2 text-sm font-medium"
-              >
-                {value}
-              </span>
-            ))}
-          </div>
+          <IconTileGrid items={coreValues} />
         </Section>
 
         <Section id="founders" title="Founders">
