@@ -1,14 +1,20 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { SpeakerHigh, SpeakerSlash } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
 
+const SLOW_MOTION_RATE = 0.5;
+
 export function FlythroughShowcase() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+
+  useEffect(() => {
+    if (videoRef.current) videoRef.current.playbackRate = SLOW_MOTION_RATE;
+  }, []);
 
   function toggleMute() {
     setMuted((current) => {
