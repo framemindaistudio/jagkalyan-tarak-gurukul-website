@@ -47,6 +47,11 @@ export const founders: {
         logo: "/images/logo-saiccha-developers.png",
         href: "https://saiccha-developers-website.vercel.app",
       },
+      {
+        name: "JagKalyan Tarak Gurukul",
+        logo: "/images/logo-jagkalyan-tarak-gurukul.jpg",
+        href: "https://www.jagkalyantarakgurukul.com/",
+      },
     ],
   },
 ];
