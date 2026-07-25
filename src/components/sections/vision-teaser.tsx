@@ -23,7 +23,7 @@ export function VisionTeaser() {
             <ArrowRight size={16} />
           </Button>
         </Reveal>
-        <Reveal delay={0.1} className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4">
+        <Reveal delay={0.1} className="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4">
           {founders.map((founder) => (
             <div key={founder.name} className="flex flex-col items-center gap-3 text-center">
               <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-border sm:h-24 sm:w-24">

@@ -50,11 +50,6 @@ export const founders: {
       },
     ],
   },
-  {
-    name: "Kiran Sawant",
-    role: "Founding Member",
-    photo: "/images/founder-kiran-sawant.jpg",
-  },
 ];
 
 export const foundersNote =

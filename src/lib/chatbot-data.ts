@@ -97,7 +97,7 @@ export const chatbotConfig: ChatbotConfig = {
     {
       id: "founders",
       question: "Who founded JagKalyan Tarak Gurukul?",
-      answer: "Dr. Jagdish Kalyandurgmath, Dr. Tarak Arolkar, and Kiran Sawant, as founding members.",
+      answer: "Dr. Jagdish Kalyandurgmath and Dr. Tarak Arolkar, as founding members.",
     },
     {
       id: "get-involved",

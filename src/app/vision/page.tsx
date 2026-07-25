@@ -56,7 +56,7 @@ export default function VisionPage() {
         </Section>
 
         <Section id="founders" title="Founders">
-          <div className="grid gap-10 sm:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-2">
             {founders.map((founder) => (
               <div key={founder.name} className="flex flex-col items-center gap-4 text-center">
                 <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-border">
