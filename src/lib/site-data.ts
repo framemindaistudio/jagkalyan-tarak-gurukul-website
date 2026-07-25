@@ -31,7 +31,7 @@ export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
   { label: "Home", href: "/" },
   { label: "Vision & Founders", href: "/vision" },
   { label: "The Campus", href: "/campus" },
-  { label: "Gurukul Eco World", href: "/eco-living" },
+  { label: "Saiccha Wisdom Valley", href: "/eco-living" },
   {
     label: "The Ecosystem",
     href: "/education",
@@ -60,7 +60,7 @@ export const footerColumns = [
     links: [
       { label: "Vision & Founders", href: "/vision" },
       { label: "The Campus", href: "/campus" },
-      { label: "Gurukul Eco World", href: "/eco-living" },
+      { label: "Saiccha Wisdom Valley", href: "/eco-living" },
       { label: "Gallery", href: "/gallery" },
     ],
   },

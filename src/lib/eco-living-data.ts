@@ -3,7 +3,7 @@
 // client. See assets/documents/eco-living-concept-layout.pdf.
 
 export const ecoLivingMeta = {
-  tagline: "A gated, plotted Gurukul Eco World scheme beside the Gurukul campus",
+  tagline: "A gated, plotted Saiccha Wisdom Valley scheme beside the Gurukul campus",
   location: "Village Khanyale, Dodamarg Taluka, Sindhudurg District, Maharashtra",
 };
 

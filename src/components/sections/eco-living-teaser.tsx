@@ -12,22 +12,22 @@ export function EcoLivingTeaser() {
       <Container className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
         <Reveal className="flex flex-col gap-6">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
-            Gurukul Eco World
+            Saiccha Wisdom Valley
           </span>
           <h2 className="font-display text-3xl leading-[1.1] tracking-tight md:text-4xl">
-            A gated Gurukul Eco World scheme, next to the campus
+            A gated Saiccha Wisdom Valley scheme, next to the campus
           </h2>
           <p className="text-base leading-relaxed text-muted-foreground">{ecoLivingMeta.tagline}</p>
           <StatGrid stats={plotStats} />
           <Button href="/eco-living" variant="secondary" className="w-fit">
-            Explore Gurukul Eco World
+            Explore Saiccha Wisdom Valley
             <ArrowRight size={16} />
           </Button>
         </Reveal>
         <Reveal delay={0.1} className="relative aspect-[4/3] overflow-hidden rounded-image border border-border">
           <Image
             src="/images/eco-living-layout-3d.jpg"
-            alt="3D layout render of the Gurukul Eco World plotted scheme beside JagKalyan Tarak Gurukul"
+            alt="3D layout render of the Saiccha Wisdom Valley plotted scheme beside JagKalyan Tarak Gurukul"
             fill
             className="bg-surface-raised object-contain"
           />
