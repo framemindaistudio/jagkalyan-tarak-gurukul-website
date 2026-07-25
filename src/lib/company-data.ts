@@ -35,7 +35,6 @@ export const founders: {
         logo: "/images/logo-jagkalyan-holistic.png",
         href: "https://www.jagkalyanholistic.com/#home",
       },
-      { name: "Nandi Foundation", logo: "/images/logo-nandi-foundation.jpg" },
     ],
   },
   {
