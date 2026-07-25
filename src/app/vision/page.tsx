@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { IconTileGrid } from "@/components/ui/icon-tile-grid";
+import { OrgLinks } from "@/components/ui/org-links";
 import { vision, mission, originStory, founders, foundersNote } from "@/lib/company-data";
 import { coreValues, contact } from "@/lib/site-data";
 
@@ -66,50 +67,8 @@ export default function VisionPage() {
                   <span className="text-sm text-muted-foreground">{founder.role}</span>
                 </div>
                 {founder.orgLinks ? (
-                  <div className="flex flex-wrap items-start justify-center gap-4 pt-1">
-                    {founder.orgLinks.map((org) => {
-                      const logoBox = (
-                        <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-border bg-surface-raised p-3 shadow-sm sm:h-24 sm:w-24">
-                          {org.logo ? (
-                            <Image
-                              src={org.logo}
-                              alt={org.name}
-                              width={80}
-                              height={80}
-                              className="h-full w-full object-contain"
-                            />
-                          ) : (
-                            <span className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
-                              Soon
-                            </span>
-                          )}
-                        </span>
-                      );
-                      const label = (
-                        <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
-                          {org.name}
-                        </span>
-                      );
-                      return org.href ? (
-                        <a
-                          key={org.name}
-                          href={org.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group flex flex-col items-center gap-2"
-                        >
-                          <span className="transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-md [&>span]:group-hover:border-primary">
-                            {logoBox}
-                          </span>
-                          {label}
-                        </a>
-                      ) : (
-                        <div key={org.name} className="flex flex-col items-center gap-2">
-                          {logoBox}
-                          {label}
-                        </div>
-                      );
-                    })}
+                  <div className="pt-1">
+                    <OrgLinks orgLinks={founder.orgLinks} />
                   </div>
                 ) : null}
               </div>

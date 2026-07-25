@@ -10,7 +10,6 @@ import { EcoLivingTeaser } from "@/components/sections/eco-living-teaser";
 import { VisionTeaser } from "@/components/sections/vision-teaser";
 import { CommunityTeaser } from "@/components/sections/community-teaser";
 import { CtaBanner } from "@/components/sections/cta-banner";
-import { PartnerLogos } from "@/components/sections/partner-logos";
 import { bookletPages } from "@/lib/booklet-data";
 
 export default function Home() {
@@ -39,7 +38,6 @@ export default function Home() {
 
       <VisionTeaser />
       <CommunityTeaser />
-      <PartnerLogos />
       <CtaBanner />
     </>
   );

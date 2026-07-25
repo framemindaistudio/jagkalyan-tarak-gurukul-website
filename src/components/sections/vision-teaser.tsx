@@ -3,6 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/motion/reveal";
+import { OrgLinks } from "@/components/ui/org-links";
 import { vision, founders } from "@/lib/company-data";
 
 export function VisionTeaser() {
@@ -22,7 +23,7 @@ export function VisionTeaser() {
             <ArrowRight size={16} />
           </Button>
         </Reveal>
-        <Reveal delay={0.1} className="grid grid-cols-3 gap-4">
+        <Reveal delay={0.1} className="grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-4">
           {founders.map((founder) => (
             <div key={founder.name} className="flex flex-col items-center gap-3 text-center">
               <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-border sm:h-24 sm:w-24">
@@ -32,6 +33,7 @@ export function VisionTeaser() {
                 <span className="text-sm font-medium leading-snug">{founder.name}</span>
                 <span className="text-xs text-muted-foreground">{founder.role}</span>
               </div>
+              {founder.orgLinks ? <OrgLinks orgLinks={founder.orgLinks} size="sm" /> : null}
             </div>
           ))}
         </Reveal>
