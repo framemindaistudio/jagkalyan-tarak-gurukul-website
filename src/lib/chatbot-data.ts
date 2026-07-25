@@ -18,7 +18,6 @@ export type ChatbotConfig = {
   topicsIntro: string;
   topics: ChatTopic[];
   faqs: ChatFaq[];
-  whatsappHref: string;
 };
 
 export const chatbotConfig: ChatbotConfig = {
@@ -37,11 +36,11 @@ export const chatbotConfig: ChatbotConfig = {
     },
     {
       id: "eco-living",
-      label: "Eco Living",
+      label: "Gurukul Eco World",
       reply:
         "A gated, plotted scheme right beside the Gurukul campus: 500 sq.m and 150 sq.m plots, Phase 1 of 1,000 plots with 3,000 planned in total, plus a cricket stadium, sports and shopping centres, and a decorative entrance gate.",
       href: "/eco-living",
-      hrefLabel: "Explore Eco Living",
+      hrefLabel: "Explore Gurukul Eco World",
     },
     {
       id: "education",
@@ -87,13 +86,13 @@ export const chatbotConfig: ChatbotConfig = {
       id: "status",
       question: "Is the campus open yet?",
       answer:
-        "Not yet. This is a concept currently in development. The Phase-1 master plan covers 20.4 acres for the Gurukul campus, and Phase 1 of the Eco Living scheme plans 1,000 of a total 3,000 plots.",
+        "Not yet. This is a concept currently in development. The Phase-1 master plan covers 20.4 acres for the Gurukul campus, and Phase 1 of the Gurukul Eco World scheme plans 1,000 of a total 3,000 plots.",
     },
     {
       id: "difference",
-      question: "What's the difference between the Gurukul and Eco Living?",
+      question: "What's the difference between the Gurukul campus and Gurukul Eco World?",
       answer:
-        "The Gurukul is the education, wellness, and research campus itself. Eco Living is the gated, plotted residential scheme built right beside it, one integrated development in two parts.",
+        "The Gurukul campus is the education, wellness, and research campus itself. Gurukul Eco World is the gated, plotted residential scheme built right beside it, one integrated development in two parts.",
     },
     {
       id: "founders",
@@ -107,5 +106,4 @@ export const chatbotConfig: ChatbotConfig = {
         "As a student, a mentor, a partner, or a founding supporter. Use the Get Involved page and the team will follow up directly.",
     },
   ],
-  whatsappHref: "https://wa.me/919820012345",
 };

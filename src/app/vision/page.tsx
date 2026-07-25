@@ -67,16 +67,10 @@ export default function VisionPage() {
                 </div>
                 {founder.orgLinks ? (
                   <div className="flex flex-wrap items-start justify-center gap-4 pt-1">
-                    {founder.orgLinks.map((org) =>
-                      org.logo && org.href ? (
-                        <a
-                          key={org.name}
-                          href={org.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group flex flex-col items-center gap-2"
-                        >
-                          <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-border bg-surface-raised p-3 shadow-sm transition-all duration-200 group-hover:-translate-y-1 group-hover:border-primary group-hover:shadow-md sm:h-24 sm:w-24">
+                    {founder.orgLinks.map((org) => {
+                      const logoBox = (
+                        <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-border bg-surface-raised p-3 shadow-sm sm:h-24 sm:w-24">
+                          {org.logo ? (
                             <Image
                               src={org.logo}
                               alt={org.name}
@@ -84,24 +78,38 @@ export default function VisionPage() {
                               height={80}
                               className="h-full w-full object-contain"
                             />
-                          </span>
-                          <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
-                            {org.name}
-                          </span>
-                        </a>
-                      ) : (
-                        <div key={org.name} className="flex flex-col items-center gap-2">
-                          <span className="flex h-20 w-20 items-center justify-center rounded-2xl border border-dashed border-border-strong sm:h-24 sm:w-24">
+                          ) : (
                             <span className="text-[10px] font-medium uppercase tracking-wide text-muted-foreground">
                               Soon
                             </span>
+                          )}
+                        </span>
+                      );
+                      const label = (
+                        <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
+                          {org.name}
+                        </span>
+                      );
+                      return org.href ? (
+                        <a
+                          key={org.name}
+                          href={org.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex flex-col items-center gap-2"
+                        >
+                          <span className="transition-all duration-200 group-hover:-translate-y-1 group-hover:shadow-md [&>span]:group-hover:border-primary">
+                            {logoBox}
                           </span>
-                          <span className="max-w-[6rem] text-xs font-medium leading-snug text-muted-foreground">
-                            {org.name}
-                          </span>
+                          {label}
+                        </a>
+                      ) : (
+                        <div key={org.name} className="flex flex-col items-center gap-2">
+                          {logoBox}
+                          {label}
                         </div>
-                      ),
-                    )}
+                      );
+                    })}
                   </div>
                 ) : null}
               </div>

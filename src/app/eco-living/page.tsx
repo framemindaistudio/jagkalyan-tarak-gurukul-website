@@ -17,9 +17,9 @@ import {
 } from "@/lib/eco-living-data";
 
 export const metadata: Metadata = {
-  title: "Eco Living | JagKalyan Tarak Gurukul",
+  title: "Gurukul Eco World | JagKalyan Tarak Gurukul",
   description:
-    "The Eco Living plotted scheme beside JagKalyan Tarak Gurukul: 500 and 150 sq.m plots, Phase 1 of 1,000 plots, 3,000 planned in total, with a cricket stadium, sports and shopping centres, and a decorative entrance gate.",
+    "The Gurukul Eco World plotted scheme beside JagKalyan Tarak Gurukul: 500 and 150 sq.m plots, Phase 1 of 1,000 plots, 3,000 planned in total, with a cricket stadium, sports and shopping centres, and a decorative entrance gate.",
 };
 
 export default function EcoLivingPage() {
@@ -27,8 +27,8 @@ export default function EcoLivingPage() {
     <>
       <PageHero
         eyebrow={ecoLivingMeta.location}
-        crumb="Eco Living"
-        title="A gated eco-living scheme, next to the Gurukul"
+        crumb="Gurukul Eco World"
+        title="A gated Gurukul Eco World scheme, next to the campus"
         subtitle={ecoLivingMeta.tagline}
       />
 
@@ -40,7 +40,7 @@ export default function EcoLivingPage() {
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image border border-border">
           <Image
             src="/images/eco-living-layout-3d.jpg"
-            alt="3D layout render of JagKalyan Tarak Gurukul and the plotted eco-living scheme at Village Khanyale, Dodamarg Taluka, Sindhudurg District"
+            alt="3D layout render of JagKalyan Tarak Gurukul and the plotted Gurukul Eco World scheme at Village Khanyale, Dodamarg Taluka, Sindhudurg District"
             fill
             sizes="(min-width: 640px) 896px, 100vw"
             className="object-contain bg-surface-raised"

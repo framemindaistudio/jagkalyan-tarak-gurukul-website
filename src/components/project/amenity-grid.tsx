@@ -78,11 +78,10 @@ export function AmenityGrid({ amenities }: { amenities: Amenity[] }) {
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
               className="object-cover opacity-30 transition-opacity duration-200 group-hover:opacity-40"
             />
-            <div className="relative z-10 flex h-11 w-11 items-center justify-center rounded-full bg-secondary text-primary">
-              <Icon name={amenity.icon} size={20} />
+            <div className="relative z-10 flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-primary">
+              <Icon name={amenity.icon} size={28} />
             </div>
-            <h3 className="relative z-10 text-base font-medium tracking-tight">{amenity.title}</h3>
-            <p className="relative z-10 text-sm leading-relaxed text-muted-foreground">{amenity.body}</p>
+            <h3 className="relative z-10 font-display text-xl tracking-tight">{amenity.title}</h3>
           </button>
         ))}
       </div>

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useTransform, type MotionValue } from "motion/react";
-import { Phone, WhatsappLogo, HandHeart, ArrowUp } from "@phosphor-icons/react/ssr";
+import { Phone, HandHeart, ArrowUp } from "@phosphor-icons/react/ssr";
 import type { Icon as PhosphorIcon } from "@phosphor-icons/react";
 
 type DockItem = {
@@ -12,12 +12,11 @@ type DockItem = {
   href?: string;
   external?: boolean;
   onClick?: () => void;
-  brand?: "whatsapp";
+  compact?: boolean;
 };
 
 const linkItems: DockItem[] = [
-  { label: "Call", icon: Phone, href: "tel:+919820012345" },
-  { label: "WhatsApp", icon: WhatsappLogo, href: "https://wa.me/919820012345", external: true, brand: "whatsapp" },
+  { label: "Call", icon: Phone, href: "tel:+919820012345", compact: true },
   { label: "Get Involved", icon: HandHeart, href: "/get-involved" },
 ];
 
@@ -30,21 +29,19 @@ function DockButton({ item, mouseX }: { item: DockItem; mouseX: MotionValue<numb
     return val - (rect.left + rect.width / 2);
   });
 
-  const widthSync = useTransform(distance, [-140, 0, 140], [44, 60, 44]);
+  const range: [number, number, number] = item.compact ? [32, 44, 32] : [44, 60, 44];
+  const widthSync = useTransform(distance, [-140, 0, 140], range);
   const width = useSpring(widthSync, { mass: 0.15, stiffness: 220, damping: 18 });
 
   const Icon = item.icon;
-  const isWhatsapp = item.brand === "whatsapp";
 
   const content = (
     <motion.div
       ref={ref}
       style={{ width, height: width }}
-      className={`group relative flex cursor-pointer items-center justify-center rounded-full shadow-md shadow-foreground/10 ${
-        isWhatsapp ? "bg-whatsapp text-on-whatsapp" : "bg-surface-raised text-primary"
-      }`}
+      className="group relative flex cursor-pointer items-center justify-center rounded-full bg-surface-raised text-primary shadow-md shadow-foreground/10"
     >
-      <Icon size={20} weight={isWhatsapp ? "fill" : "regular"} />
+      <Icon size={item.compact ? 16 : 20} weight="regular" />
       <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-foreground px-2.5 py-1 text-xs font-medium text-background opacity-0 transition-opacity group-hover:opacity-100">
         {item.label}
       </span>
@@ -83,6 +80,7 @@ export function FloatingDock() {
       label: "Back to top",
       icon: ArrowUp,
       onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+      compact: true,
     },
   ];
 
