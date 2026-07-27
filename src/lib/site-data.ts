@@ -43,6 +43,7 @@ export const primaryNav: Array<NavLink & { items?: NavLink[] }> = [
     ],
   },
   { label: "Gallery", href: "/gallery" },
+  { label: "Live Updates", href: "/live-updates" },
 ];
 
 export const footerColumns = [
@@ -62,6 +63,7 @@ export const footerColumns = [
       { label: "The Campus", href: "/campus" },
       { label: "Saiccha Wisdom Valley", href: "/eco-living" },
       { label: "Gallery", href: "/gallery" },
+      { label: "Live Updates", href: "/live-updates" },
     ],
   },
   {
