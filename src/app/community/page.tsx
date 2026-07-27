@@ -49,6 +49,14 @@ export default function CommunityPage() {
 
         <Section id="facilities" title="Facilities">
           <IconTileGrid items={community.sevaUdyan.facilities} />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
+            <Image
+              src="/images/jk-community-care-room.jpg"
+              alt="A caregiver and resident sharing a moment in a Seva Udyan common room"
+              fill
+              className="object-cover"
+            />
+          </div>
         </Section>
       </Container>
     </>

@@ -73,6 +73,14 @@ export default function CampusPage() {
             {residentialBuildings.eachArea}, {residentialBuildings.totalArea} in total.
           </p>
           <IconTileGrid items={residentialBuildings.uses} />
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
+            <Image
+              src="/images/jk-campus-residential.jpg"
+              alt="Residential and activity buildings at JagKalyan Tarak Gurukul"
+              fill
+              className="object-cover"
+            />
+          </div>
         </Section>
 
         <Section id="utility" title="Utility Buildings">
@@ -107,6 +115,14 @@ export default function CampusPage() {
               </h3>
               <IconTileGrid items={sustainableInfrastructure.greenInfrastructure} />
             </div>
+          </div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
+            <Image
+              src="/images/jk-campus-sustainability.jpg"
+              alt="Landscaped water conservation feature with solar panels at JagKalyan Tarak Gurukul"
+              fill
+              className="object-cover"
+            />
           </div>
         </Section>
 

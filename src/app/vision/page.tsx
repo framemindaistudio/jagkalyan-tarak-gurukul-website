@@ -24,6 +24,15 @@ export default function VisionPage() {
         subtitle="Inspired by the Gurukul tradition, built for a world that needs both knowledge and wisdom."
       />
 
+      <div className="relative aspect-[21/9] w-full overflow-hidden">
+        <Image
+          src="/images/jk-vision-banner.jpg"
+          alt="A founder reviewing plans overlooking the JagKalyan Tarak Gurukul campus site"
+          fill
+          className="object-cover"
+        />
+      </div>
+
       <Container className="max-w-4xl">
         <Section id="story" title="How it began">
           <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">{originStory}</p>

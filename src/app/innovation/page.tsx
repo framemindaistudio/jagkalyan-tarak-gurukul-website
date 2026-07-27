@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
@@ -25,15 +24,6 @@ export default function InnovationPage() {
         <Section id="approach" title="From Concept to Enterprise">
           <IconRevealGrid items={innovation.features} />
         </Section>
-
-        <div className="relative mb-14 aspect-[4/3] w-full overflow-hidden rounded-image md:mb-20">
-          <Image
-            src="/images/jk-innovation-lab.jpg"
-            alt="A startup incubation and innovation lab on campus"
-            fill
-            className="object-cover"
-          />
-        </div>
       </Container>
     </>
   );
