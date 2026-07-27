@@ -13,6 +13,7 @@ export function Hero() {
           muted
           loop
           playsInline
+          controlsList="nodownload"
           poster="/images/jk-hero-flythrough-poster.jpg"
           className="absolute inset-0 h-full w-full object-cover"
         >

@@ -45,6 +45,7 @@ export function FlythroughShowcase() {
             muted
             loop
             playsInline
+            controlsList="nodownload"
             poster="/images/jk-complex-flythrough-full-poster.jpg"
             className="h-full w-full object-cover"
           >

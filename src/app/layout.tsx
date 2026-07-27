@@ -4,7 +4,9 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { Chatbot } from "@/components/layout/chatbot";
+import { NoDownloadGuard } from "@/components/layout/no-download-guard";
 import { chatbotConfig } from "@/lib/chatbot-data";
+import { contact } from "@/lib/site-data";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -40,6 +42,22 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "JagKalyan Tarak Gurukul",
+  description:
+    "An integrated campus for holistic education, wellness, research, and eco-living in Dodamarg, North Goa, a joint initiative of JagKalyan Holistic Mission and Saiccha Developers.",
+  url: "https://www.jagkalyantarakgurukul.com",
+  logo: "https://www.jagkalyantarakgurukul.com/images/logo.png",
+  email: contact.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: contact.address,
+    addressCountry: "IN",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,6 +69,11 @@ export default function RootLayout({
       className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <NoDownloadGuard />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
