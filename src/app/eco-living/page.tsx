@@ -37,7 +37,7 @@ export default function EcoLivingPage() {
           <ScaleShowcase {...scale} />
         </Section>
 
-        <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image border border-border">
+        <div className="relative aspect-[21/9] w-full overflow-hidden rounded-image border border-border">
           <Image
             src="/images/eco-living-layout-3d.jpg"
             alt="3D layout render of JagKalyan Tarak Gurukul and the plotted Saiccha Wisdom Valley scheme at Village Khanyale, Dodamarg Taluka, Sindhudurg District"

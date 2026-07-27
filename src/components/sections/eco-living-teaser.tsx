@@ -24,7 +24,7 @@ export function EcoLivingTeaser() {
             <ArrowRight size={16} />
           </Button>
         </Reveal>
-        <Reveal delay={0.1} className="relative aspect-[4/3] overflow-hidden rounded-image border border-border">
+        <Reveal delay={0.1} className="relative aspect-[21/9] overflow-hidden rounded-image border border-border lg:aspect-[4/3]">
           <Image
             src="/images/eco-living-layout-3d.jpg"
             alt="3D layout render of the Saiccha Wisdom Valley plotted scheme beside JagKalyan Tarak Gurukul"
