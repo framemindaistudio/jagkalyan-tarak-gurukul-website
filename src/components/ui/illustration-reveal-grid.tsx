@@ -59,6 +59,50 @@ const MOTION_PROFILES: Record<string, MotionProfile> = {
   // Eco-Living Plot Types
   "500sqm": { rotate: 0.4, duration: 7 },
   "150sqm": { rotate: 0.4, duration: 7.5 },
+
+  // EcosystemStrip
+  "gurukul-campus": { rotate: 0.4, duration: 7 },
+  "wellness-healthcare": { y: 1.5, duration: 6.5 },
+  "yoga-ayurveda-naturopathy": { rotate: 0.6, duration: 6 },
+  "organic-farms": { y: 2, duration: 6 },
+  "eco-homes": { rotate: 0.4, duration: 7.5 },
+  "research-innovation-labs": { rotate: 0.5, duration: 6 },
+  "gramodyog-business-incubation": { rotate: 0.6, y: 1.5, duration: 6.5 },
+  "meditation-forests": { scale: 0.008, duration: 8 },
+  "goshala-cow-research": { y: 1.8, duration: 6.5 },
+  "renewable-energy": { rotate: 0.5, duration: 6 },
+  "water-conservation": { y: 2, duration: 6 },
+
+  // Eco-Living roads & infrastructure
+  "road-15m": { rotate: 0.3, duration: 7.5 },
+  "road-12m": { rotate: 0.3, duration: 8 },
+  "site-office": { rotate: 0.5, y: 1.5, duration: 6 },
+  "electrical-substation": { rotate: 0.6, duration: 5.5 },
+  stp: { rotate: 0.7, duration: 6 },
+  "caretaker-quarters": { rotate: 0.4, duration: 7 },
+
+  // Community & Seva — serving groups (kept minimal, respectful)
+  "divyang-handicapped": { y: 1.5, duration: 7 },
+  blind: { rotate: 0.4, duration: 7 },
+  "deaf-mute": { scale: 0.01, duration: 7 },
+  "schizophrenia-support": { y: 1.3, duration: 7.5 },
+  "abandoned-children": { rotate: 0.5, y: 1.5, duration: 6 },
+  "seniors-widows": { rotate: 0.3, duration: 7.5 },
+  "single-mothers": { rotate: 0.5, y: 1.5, duration: 6 },
+  "singles-unmarried": { y: 1.5, duration: 6.5 },
+  "gender-imbalanced-support": { rotate: 0.3, duration: 7.5 },
+  "diseased-care": { y: 1.3, duration: 7 },
+  "farmers-support": { rotate: 0.5, y: 1.5, duration: 6 },
+  "nandi-seva": { y: 1.5, duration: 6.5 },
+
+  // Community & Seva — facilities
+  "residential-care-homes": { rotate: 0.4, duration: 7 },
+  "medical-therapeutic-care": { y: 1.5, duration: 6.5 },
+  "skill-training-employment": { rotate: 0.5, y: 1.5, duration: 6 },
+  "counseling-mental-wellness": { scale: 0.01, duration: 7 },
+  "spiritual-yoga-healing": { scale: 0.01, duration: 7 },
+  "sustainable-living": { y: 1.8, duration: 6.5 },
+  "community-inclusion": { rotate: 0.3, duration: 7.5 },
 };
 const DEFAULT_PROFILE: MotionProfile = { rotate: 0.7, y: 2, duration: 6 };
 

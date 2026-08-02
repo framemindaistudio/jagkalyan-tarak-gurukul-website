@@ -41,8 +41,20 @@ export const plotTypes = [
 ];
 
 export const roads = [
-  { icon: "Path", label: "15.0 m wide roads" },
-  { icon: "Path", label: "12.0 m wide roads" },
+  {
+    key: "road-15m",
+    title: "15.0 m wide roads",
+    body: "The scheme's main internal roads, generous enough for comfortable two-way traffic.",
+    image: "/images/jk-illust-d-el-road-wide.png",
+    alt: "A miniature architectural model of a wide paved road section",
+  },
+  {
+    key: "road-12m",
+    title: "12.0 m wide roads",
+    body: "Secondary internal roads connecting every plot back to the main network.",
+    image: "/images/jk-illust-d-el-road-narrow.png",
+    alt: "A miniature architectural model of a narrower paved road section",
+  },
 ];
 
 export const amenities = [
@@ -97,8 +109,32 @@ export const amenities = [
 ];
 
 export const infrastructure = [
-  { icon: "Briefcase", label: "Site office" },
-  { icon: "Lightning", label: "Electrical sub-station & transformer" },
-  { icon: "Recycle", label: "Sewage Treatment Plant (STP)" },
-  { icon: "House", label: "Caretaker quarters" },
+  {
+    key: "site-office",
+    title: "Site office",
+    body: "The on-site administrative base for the scheme, from launch through handover.",
+    image: "/images/jk-illust-d-el-site-office.png",
+    alt: "A leather portfolio case with rolled architectural blueprints",
+  },
+  {
+    key: "electrical-substation",
+    title: "Electrical sub-station & transformer",
+    body: "Dedicated power infrastructure sized for the full scheme, not shared with the grid.",
+    image: "/images/jk-illust-d-el-transformer.png",
+    alt: "An abstracted minimalist electrical transformer form in matte metal",
+  },
+  {
+    key: "stp",
+    title: "Sewage Treatment Plant (STP)",
+    body: "On-site treatment so wastewater is processed and reused, not simply discharged.",
+    image: "/images/jk-illust-d-el-stp.png",
+    alt: "A smooth carved stone spiral form suggesting water circulation",
+  },
+  {
+    key: "caretaker-quarters",
+    title: "Caretaker quarters",
+    body: "On-site housing for the staff who keep the scheme running day to day.",
+    image: "/images/jk-illust-d-el-caretaker.png",
+    alt: "A miniature architectural model of a small caretaker cottage",
+  },
 ];

@@ -6,7 +6,6 @@ import { Section } from "@/components/ui/section";
 import { ScaleShowcase } from "@/components/project/scale-showcase";
 import { AmenityGrid } from "@/components/project/amenity-grid";
 import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
-import { IconTileGrid } from "@/components/ui/icon-tile-grid";
 import {
   ecoLivingMeta,
   scale,
@@ -49,7 +48,7 @@ export default function EcoLivingPage() {
 
         <Section id="plots" title="Plot Types">
           <IllustrationRevealGrid items={plotTypes} columns={2} />
-          <IconTileGrid items={roads} columns={2} />
+          <IllustrationRevealGrid items={roads} columns={2} />
         </Section>
 
         <Section id="amenities" title="Amenities">
@@ -57,7 +56,7 @@ export default function EcoLivingPage() {
         </Section>
 
         <Section id="infrastructure" title="Infrastructure">
-          <IconTileGrid items={infrastructure} />
+          <IllustrationRevealGrid items={infrastructure} columns={2} />
         </Section>
       </Container>
     </>

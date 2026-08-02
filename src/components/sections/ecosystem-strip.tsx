@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/motion/reveal";
-import { IconTileGrid } from "@/components/ui/icon-tile-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { ecosystemZones } from "@/lib/site-data";
 
 export function EcosystemStrip() {
@@ -13,7 +13,7 @@ export function EcosystemStrip() {
           subtitle="Learning, living, research, and service are not separate buildings, but one self-sustaining ecosystem."
         />
         <Reveal>
-          <IconTileGrid items={ecosystemZones} />
+          <IllustrationRevealGrid items={ecosystemZones} columns={3} />
         </Reveal>
       </Container>
     </section>

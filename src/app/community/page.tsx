@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { IconTileGrid } from "@/components/ui/icon-tile-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { community } from "@/lib/content-data";
 
 export const metadata: Metadata = {
@@ -44,11 +44,11 @@ export default function CommunityPage() {
         </Section>
 
         <Section id="who-we-serve" title="To Serve the Needy">
-          <IconTileGrid items={community.sevaUdyan.servingGroups} />
+          <IllustrationRevealGrid items={community.sevaUdyan.servingGroups} columns={3} />
         </Section>
 
         <Section id="facilities" title="Facilities">
-          <IconTileGrid items={community.sevaUdyan.facilities} />
+          <IllustrationRevealGrid items={community.sevaUdyan.facilities} columns={3} />
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
             <Image
               src="/images/jk-community-care-room.jpg"
