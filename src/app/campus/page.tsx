@@ -5,6 +5,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { StatGrid } from "@/components/ui/stat-grid";
 import { IconTileGrid } from "@/components/ui/icon-tile-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { VideoMarquee } from "@/components/sections/video-marquee";
 import {
   campusStats,
@@ -52,7 +53,7 @@ export default function CampusPage() {
                   <h3 className="font-display text-lg tracking-tight">{floor.name}</h3>
                   <span className="text-sm text-muted-foreground">{floor.area}</span>
                 </div>
-                <IconTileGrid items={floor.facilities} />
+                <IllustrationRevealGrid items={floor.facilities} columns={3} />
               </div>
             ))}
           </div>
@@ -72,7 +73,7 @@ export default function CampusPage() {
             {residentialBuildings.count} buildings ({residentialBuildings.configuration}), each{" "}
             {residentialBuildings.eachArea}, {residentialBuildings.totalArea} in total.
           </p>
-          <IconTileGrid items={residentialBuildings.uses} />
+          <IllustrationRevealGrid items={residentialBuildings.uses} columns={3} />
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image">
             <Image
               src="/images/jk-campus-residential.jpg"
@@ -88,7 +89,7 @@ export default function CampusPage() {
             {utilityBuildings.count} buildings ({utilityBuildings.configuration}), each{" "}
             {utilityBuildings.eachArea}, {utilityBuildings.totalArea} in total.
           </p>
-          <IconTileGrid items={utilityBuildings.uses} />
+          <IllustrationRevealGrid items={utilityBuildings.uses} columns={3} />
         </Section>
 
         <Section id="entrance" title="Grand Entrance">
@@ -100,7 +101,7 @@ export default function CampusPage() {
               className="object-cover"
             />
           </div>
-          <IconTileGrid items={grandEntrance} />
+          <IllustrationRevealGrid items={grandEntrance} columns={3} />
         </Section>
 
         <Section id="sustainability" title="Sustainable Infrastructure">

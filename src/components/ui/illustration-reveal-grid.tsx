@@ -103,6 +103,59 @@ const MOTION_PROFILES: Record<string, MotionProfile> = {
   "spiritual-yoga-healing": { scale: 0.01, duration: 7 },
   "sustainable-living": { y: 1.8, duration: 6.5 },
   "community-inclusion": { rotate: 0.3, duration: 7.5 },
+
+  // Campus — Main Building, Ground Floor
+  "grand-reception": { scale: 0.012, duration: 6.5 },
+  "administrative-office": { rotate: 0.4, duration: 7 },
+  "board-room": { y: 1.3, duration: 7 },
+  "exhibition-gallery": { rotate: 0.4, duration: 7 },
+  auditorium: { y: 1.5, duration: 6.5 },
+  "dining-hall": { rotate: 0.4, duration: 6.5 },
+  kitchen: { y: 1.5, duration: 6 },
+  "medical-centre": { rotate: 0.4, y: 1.3, duration: 6.5 },
+
+  // Campus — Main Building, First Floor
+  "library-knowledge-centre": { scale: 0.01, duration: 7 },
+  "digital-learning-centre": { rotate: 0.4, duration: 6.5 },
+  "innovation-lab": { rotate: 0.8, duration: 5.5 },
+  "research-centre": { y: 1.3, duration: 7 },
+  "faculty-rooms": { rotate: 0.5, y: 1.3, duration: 6 },
+  "meeting-rooms": { y: 1.5, duration: 6.5 },
+
+  // Campus — Main Building, Second Floor
+  "meditation-hall": { scale: 0.01, duration: 7.5 },
+  "yoga-hall": { rotate: 0.6, duration: 6 },
+  "conference-hall": { rotate: 0.4, duration: 7 },
+  "skill-training-rooms": { rotate: 0.5, y: 1.5, duration: 6 },
+  "spiritual-wisdom-centre": { scale: 0.01, duration: 7 },
+  "vip-suites": { y: 1.5, duration: 6.5 },
+
+  // Campus — Residential Buildings
+  "students-living": { y: 1.5, duration: 6.5 },
+  "faculty-residence": { rotate: 0.4, y: 1.3, duration: 7 },
+  "aaharshala-dining": { y: 1.5, duration: 6 },
+  "students-activity-centre": { rotate: 0.4, duration: 6.5 },
+  "arogyashala-health": { y: 1.3, duration: 7 },
+  "natural-nutrition-centre": { y: 1.8, duration: 6 },
+  "skill-development-centre-res": { rotate: 0.5, duration: 6.5 },
+  "research-innovation-centre-res": { rotate: 0.6, duration: 5.5 },
+
+  // Campus — Utility Buildings
+  "security-office": { rotate: 0.5, duration: 6 },
+  "electrical-room": { rotate: 0.4, duration: 6.5 },
+  "telecom-room": { rotate: 0.5, duration: 6 },
+  "maintenance-office": { rotate: 0.4, y: 1.3, duration: 6.5 },
+  "store-room": { y: 1.3, duration: 7 },
+  "food-courts": { y: 1.5, duration: 6.5 },
+  "wash-rooms": { y: 1.3, duration: 7 },
+  "horticulture-office": { rotate: 0.5, y: 1.5, duration: 6 },
+
+  // Campus — Grand Entrance
+  "monumental-gate": { rotate: 0.3, duration: 7.5 },
+  "security-check": { rotate: 0.4, duration: 6.5 },
+  "visitor-parking": { rotate: 0.3, duration: 7.5 },
+  "digital-display": { rotate: 0.4, duration: 6.5 },
+  "reception-plaza": { rotate: 0.3, duration: 7.5 },
 };
 const DEFAULT_PROFILE: MotionProfile = { rotate: 0.7, y: 2, duration: 6 };
 
