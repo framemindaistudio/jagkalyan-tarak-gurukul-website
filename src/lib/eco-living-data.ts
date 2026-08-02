@@ -23,14 +23,20 @@ export const scale = {
 
 export const plotTypes = [
   {
+    key: "500sqm",
     icon: "Ruler",
     title: "500 sq.m Plots",
     body: "The larger plot format, laid out along the scheme's main internal roads.",
+    image: "/images/jk-illust-d-plot-500sqm.png",
+    alt: "A miniature architectural site model of a larger residential plot",
   },
   {
+    key: "150sqm",
     icon: "House",
     title: "150 sq.m Plots",
     body: "A compact plot format for buyers seeking a smaller, more affordable footprint.",
+    image: "/images/jk-illust-d-plot-150sqm.png",
+    alt: "A miniature architectural site model of a compact residential plot",
   },
 ];
 

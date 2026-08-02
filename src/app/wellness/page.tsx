@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { IconRevealGrid } from "@/components/ui/icon-reveal-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { CheckCircle } from "@phosphor-icons/react/ssr";
 import { wellness } from "@/lib/content-data";
 
@@ -33,7 +33,7 @@ export default function WellnessPage() {
 
       <Container className="max-w-4xl">
         <Section id="approach" title="Whole-Body Wellness">
-          <IconRevealGrid items={wellness.features} />
+          <IllustrationRevealGrid items={wellness.features} columns={2} />
         </Section>
 
         <Section id="rhythm" title="Every Day, a Step Toward a Better You">

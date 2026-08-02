@@ -5,7 +5,7 @@ import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
 import { ScaleShowcase } from "@/components/project/scale-showcase";
 import { AmenityGrid } from "@/components/project/amenity-grid";
-import { IconRevealGrid } from "@/components/ui/icon-reveal-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { IconTileGrid } from "@/components/ui/icon-tile-grid";
 import {
   ecoLivingMeta,
@@ -48,7 +48,7 @@ export default function EcoLivingPage() {
         </div>
 
         <Section id="plots" title="Plot Types">
-          <IconRevealGrid items={plotTypes} />
+          <IllustrationRevealGrid items={plotTypes} columns={2} />
           <IconTileGrid items={roads} columns={2} />
         </Section>
 

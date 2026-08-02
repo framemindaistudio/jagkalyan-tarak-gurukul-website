@@ -4,7 +4,7 @@ import { ArrowSquareOut } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { IconTileGrid } from "@/components/ui/icon-tile-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { OrgLinks } from "@/components/ui/org-links";
 import { vision, mission, originStory, founders, foundersNote } from "@/lib/company-data";
 import { coreValues, contact } from "@/lib/site-data";
@@ -61,7 +61,7 @@ export default function VisionPage() {
         </Section>
 
         <Section id="values" title="Core Values">
-          <IconTileGrid items={coreValues} />
+          <IllustrationRevealGrid items={coreValues} columns={3} />
         </Section>
 
         <Section id="founders" title="Founders">

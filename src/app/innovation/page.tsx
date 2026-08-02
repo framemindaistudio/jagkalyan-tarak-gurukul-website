@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { IconRevealGrid } from "@/components/ui/icon-reveal-grid";
+import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import { innovation } from "@/lib/content-data";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function InnovationPage() {
 
       <Container className="max-w-4xl">
         <Section id="approach" title="From Concept to Enterprise">
-          <IconRevealGrid items={innovation.features} />
+          <IllustrationRevealGrid items={innovation.features} columns={2} />
         </Section>
       </Container>
     </>

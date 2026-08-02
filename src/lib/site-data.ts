@@ -13,13 +13,55 @@ export const contact = {
 };
 
 export const coreValues = [
-  { icon: "Heartbeat", label: "Wellness" },
-  { icon: "BookOpenText", label: "Wisdom" },
-  { icon: "HandHeart", label: "Welfare" },
-  { icon: "TrendUp", label: "Wealth" },
-  { icon: "Handshake", label: "Harmony" },
-  { icon: "Leaf", label: "Sustainability" },
-  { icon: "UsersThree", label: "Service" },
+  {
+    key: "wellness",
+    title: "Wellness",
+    body: "Physical, mental, and spiritual wellbeing woven into every part of campus life.",
+    image: "/images/jk-illust-d-cv-wellness.png",
+    alt: "A carved stone bowl of still water with a single floating flower",
+  },
+  {
+    key: "wisdom",
+    title: "Wisdom",
+    body: "Vedic knowledge held alongside modern learning, science, and technology.",
+    image: "/images/jk-illust-d-cv-wisdom.png",
+    alt: "An open leather-bound book beside a small glowing brass oil lamp",
+  },
+  {
+    key: "welfare",
+    title: "Welfare",
+    body: "Compassion and care extended to students, staff, and the wider community.",
+    image: "/images/jk-illust-d-cv-welfare.png",
+    alt: "A pair of gently clasped hands rendered as a matte clay sculpture",
+  },
+  {
+    key: "wealth",
+    title: "Wealth",
+    body: "Entrepreneurship and skill-building that create real, lasting prosperity.",
+    image: "/images/jk-illust-d-cv-wealth.png",
+    alt: "A ceramic bowl gently overflowing with golden wheat grain",
+  },
+  {
+    key: "harmony",
+    title: "Harmony",
+    body: "A community where every generation, background, and belief finds its place.",
+    image: "/images/jk-illust-d-cv-harmony.png",
+    alt: "Three smooth natural stones balanced in a simple stacked cairn",
+  },
+  {
+    key: "sustainability",
+    title: "Sustainability",
+    body: "Renewable energy, organic farming, and a genuinely zero-waste campus.",
+    image: "/images/jk-illust-d-cv-sustainability.png",
+    alt: "A single green leaf resting on stone with one clear water droplet",
+  },
+  {
+    key: "service",
+    title: "Service",
+    body: "Seva as a daily practice, not an occasional act of charity.",
+    image: "/images/jk-illust-d-cv-service.png",
+    alt: "A pair of matte clay hands gently offering a small ceramic bowl",
+  },
 ];
 
 type NavLink = {

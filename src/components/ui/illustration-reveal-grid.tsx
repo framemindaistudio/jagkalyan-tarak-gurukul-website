@@ -26,6 +26,39 @@ const MOTION_PROFILES: Record<string, MotionProfile> = {
   "lifelong-learning": { rotate: 0.6, y: 1.5, duration: 6 },
   "community-connection": { y: 2, duration: 6.5 },
   "purpose-prosperity": { rotate: 1, y: 2.5, duration: 5 },
+
+  // Education
+  "smart-classrooms": { rotate: 0.5, y: 1.5, duration: 6 },
+  "meditation-halls": { scale: 0.01, duration: 7.5 },
+  "ai-robotics-labs": { rotate: 0.6, duration: 5.5 },
+  "organic-farming": { y: 2, duration: 6.5 },
+  "martial-arts": { rotate: 0.7, y: 1.5, duration: 5 },
+  "music-arts-leadership": { rotate: 0.8, duration: 6 },
+
+  // Wellness
+  "yoga-pranayama": { scale: 0.012, duration: 7 },
+  "ayurveda-naturopathy": { y: 1.5, duration: 6.5 },
+  "preventive-health-care": { rotate: 0.6, y: 1.5, duration: 6 },
+  "sattvic-nutrition": { y: 2, duration: 6 },
+
+  // Innovation
+  "startup-incubation": { scale: 0.015, duration: 6.5 },
+  "ai-drones-gis-robotics": { rotate: 0.8, y: 2, duration: 5 },
+  "gramodyog-rural-enterprise": { y: 2, duration: 6.5 },
+  "research-innovation-centre": { rotate: 0.5, duration: 6 },
+
+  // Core Values
+  wellness: { y: 1.5, duration: 7 },
+  wisdom: { scale: 0.01, duration: 6.5 },
+  welfare: { rotate: 0.5, duration: 6 },
+  wealth: { y: 2, duration: 6 },
+  harmony: { rotate: 0.4, duration: 7.5 },
+  sustainability: { rotate: 0.6, y: 1.5, duration: 5.5 },
+  service: { y: 1.8, duration: 6.5 },
+
+  // Eco-Living Plot Types
+  "500sqm": { rotate: 0.4, duration: 7 },
+  "150sqm": { rotate: 0.4, duration: 7.5 },
 };
 const DEFAULT_PROFILE: MotionProfile = { rotate: 0.7, y: 2, duration: 6 };
 
