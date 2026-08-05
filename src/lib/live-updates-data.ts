@@ -57,4 +57,18 @@ export const liveUpdates: LiveUpdate[] = [
     mediaType: "photo",
     url: "https://plain-apac-prod-public.komododecks.com/202607/27/Zr82qJ5GrOKq4xwIFjIk/image.jpg",
   },
+  {
+    id: "2026-08-05-1",
+    date: "2026-08-05",
+    title: "Campus Progress Video 1",
+    mediaType: "video",
+    url: "https://www.image2url.com/r2/default/videos/1785895244997-65e89d19-d679-4413-af5b-9df3b9f61aa6.mp4",
+  },
+  {
+    id: "2026-08-05-2",
+    date: "2026-08-05",
+    title: "Campus Progress Video 2",
+    mediaType: "video",
+    url: "https://www.image2url.com/r2/default/videos/1785895308316-c1adf9d3-79f1-487e-b34a-1d68f508d3c1.mp4",
+  },
 ];
