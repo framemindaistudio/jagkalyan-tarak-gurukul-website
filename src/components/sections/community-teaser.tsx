@@ -15,6 +15,7 @@ export function CommunityTeaser() {
               src="/images/jk-community-seva.jpg"
               alt="A community care moment in the JagKalyan Seva Udyan garden"
               fill
+              sizes="(min-width: 1024px) 660px, 100vw"
               className="object-cover"
             />
           </div>

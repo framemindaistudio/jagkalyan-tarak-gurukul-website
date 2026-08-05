@@ -54,6 +54,7 @@ export default function CommunityPage() {
               src="/images/jk-community-care-room.jpg"
               alt="A caregiver and resident sharing a moment in a Seva Udyan common room"
               fill
+              sizes="(min-width: 896px) 896px, 100vw"
               className="object-cover"
             />
           </div>

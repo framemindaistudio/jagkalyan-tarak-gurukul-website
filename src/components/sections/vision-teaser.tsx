@@ -27,7 +27,7 @@ export function VisionTeaser() {
           {founders.map((founder) => (
             <div key={founder.name} className="flex flex-col items-center gap-3 text-center">
               <div className="relative h-20 w-20 overflow-hidden rounded-full border-2 border-border sm:h-24 sm:w-24">
-                <Image src={founder.photo} alt={founder.name} fill className="object-cover" />
+                <Image src={founder.photo} alt={founder.name} fill sizes="96px" className="object-cover" />
               </div>
               <div className="flex flex-col gap-0.5">
                 <span className="text-sm font-medium leading-snug">{founder.name}</span>

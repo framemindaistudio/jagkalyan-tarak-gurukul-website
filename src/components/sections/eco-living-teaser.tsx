@@ -29,6 +29,7 @@ export function EcoLivingTeaser() {
             src="/images/eco-living-layout-3d.jpg"
             alt="3D layout render of the Saiccha Wisdom Valley plotted scheme beside JagKalyan Tarak Gurukul"
             fill
+            sizes="(min-width: 1024px) 660px, 100vw"
             className="bg-surface-raised object-contain"
           />
         </Reveal>

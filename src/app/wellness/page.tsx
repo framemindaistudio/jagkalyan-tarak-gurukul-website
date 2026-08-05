@@ -55,6 +55,7 @@ export default function WellnessPage() {
             src="/images/jk-herbal-garden.jpg"
             alt="Hands harvesting herbs in the campus herbal garden"
             fill
+            sizes="(min-width: 896px) 896px, 100vw"
             className="object-cover"
           />
         </div>

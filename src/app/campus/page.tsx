@@ -64,6 +64,7 @@ export default function CampusPage() {
             src="/images/jk-main-building-exterior.jpg"
             alt="The main campus building of JagKalyan Tarak Gurukul, cream stone with a central blue dome"
             fill
+            sizes="(min-width: 896px) 896px, 100vw"
             className="object-cover"
           />
         </div>
@@ -79,6 +80,7 @@ export default function CampusPage() {
               src="/images/jk-campus-residential.jpg"
               alt="Residential and activity buildings at JagKalyan Tarak Gurukul"
               fill
+              sizes="(min-width: 896px) 896px, 100vw"
               className="object-cover"
             />
           </div>
@@ -98,6 +100,7 @@ export default function CampusPage() {
               src="/images/jk-grand-entrance.jpg"
               alt="The monumental entrance gate of JagKalyan Tarak Gurukul at dusk"
               fill
+              sizes="(min-width: 896px) 896px, 100vw"
               className="object-cover"
             />
           </div>
@@ -122,6 +125,7 @@ export default function CampusPage() {
               src="/images/jk-campus-sustainability.jpg"
               alt="Landscaped water conservation feature with solar panels at JagKalyan Tarak Gurukul"
               fill
+              sizes="(min-width: 896px) 896px, 100vw"
               className="object-cover"
             />
           </div>

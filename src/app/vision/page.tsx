@@ -69,7 +69,7 @@ export default function VisionPage() {
             {founders.map((founder) => (
               <div key={founder.name} className="flex flex-col items-center gap-4 text-center">
                 <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-border">
-                  <Image src={founder.photo} alt={founder.name} fill className="object-cover" />
+                  <Image src={founder.photo} alt={founder.name} fill sizes="128px" className="object-cover" />
                 </div>
                 <div className="flex flex-col gap-1">
                   <span className="text-base font-medium tracking-tight">{founder.name}</span>
