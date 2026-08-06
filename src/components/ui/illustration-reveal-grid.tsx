@@ -58,6 +58,7 @@ const MOTION_PROFILES: Record<string, MotionProfile> = {
 
   // Eco-Living Plot Types
   "500sqm": { rotate: 0.4, duration: 7 },
+  "300sqm": { rotate: 0.4, y: 1.5, duration: 6.5 },
   "150sqm": { rotate: 0.4, duration: 7.5 },
 
   // EcosystemStrip

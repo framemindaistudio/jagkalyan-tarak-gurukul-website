@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { PageHero } from "@/components/ui/page-hero";
 import { Section } from "@/components/ui/section";
-import { ScaleShowcase } from "@/components/project/scale-showcase";
+import { StatGrid } from "@/components/ui/stat-grid";
 import { AmenityGrid } from "@/components/project/amenity-grid";
 import { IllustrationRevealGrid } from "@/components/ui/illustration-reveal-grid";
 import {
   ecoLivingMeta,
-  scale,
+  plotStats,
   plotTypes,
   roads,
   amenities,
@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "Saiccha Wisdom Valley | JagKalyan Tarak Gurukul",
   description:
-    "The Saiccha Wisdom Valley plotted scheme beside JagKalyan Tarak Gurukul: 500 and 150 sq.m plots, Phase 1 of 1,000 plots, 3,000 planned in total, with a cricket stadium, sports and shopping centres, and a decorative entrance gate.",
+    "The Saiccha Wisdom Valley plotted scheme beside JagKalyan Tarak Gurukul: 2,336 plots across 500, 300, and 150 sq.m formats, with a cricket stadium, sports and shopping centres, and a decorative entrance gate.",
 };
 
 export default function EcoLivingPage() {
@@ -33,7 +33,7 @@ export default function EcoLivingPage() {
 
       <Container className="max-w-4xl">
         <Section id="scale" title="Scale">
-          <ScaleShowcase {...scale} />
+          <StatGrid stats={plotStats} />
         </Section>
 
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-image border border-border">
@@ -47,7 +47,7 @@ export default function EcoLivingPage() {
         </div>
 
         <Section id="plots" title="Plot Types">
-          <IllustrationRevealGrid items={plotTypes} columns={2} />
+          <IllustrationRevealGrid items={plotTypes} columns={3} />
           <IllustrationRevealGrid items={roads} columns={2} />
         </Section>
 

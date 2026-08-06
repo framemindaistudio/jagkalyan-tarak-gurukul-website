@@ -8,8 +8,8 @@ export function CountUp({ value, className }: { value: string; className?: strin
   const inView = useInView(ref, { once: true, amount: 0.6 });
   const reduce = useReducedMotion();
 
-  const match = value.match(/^([\d.]+)(.*)$/);
-  const numeric = match ? parseFloat(match[1]) : null;
+  const match = value.match(/^([\d,]*\d(?:\.\d+)?)(.*)$/);
+  const numeric = match ? parseFloat(match[1].replace(/,/g, "")) : null;
   const suffix = match ? match[2] : "";
 
   useEffect(() => {
@@ -28,7 +28,8 @@ export function CountUp({ value, className }: { value: string; className?: strin
       ease: [0.16, 1, 0.3, 1],
       onUpdate(latest) {
         if (node) {
-          node.textContent = (isInt ? Math.round(latest) : latest.toFixed(1)) + suffix;
+          const formatted = isInt ? Math.round(latest).toLocaleString("en-US") : latest.toFixed(1);
+          node.textContent = formatted + suffix;
         }
       },
     });

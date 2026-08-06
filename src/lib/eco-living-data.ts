@@ -8,33 +8,34 @@ export const ecoLivingMeta = {
 };
 
 export const plotStats = [
-  { icon: "Ruler", value: "1,000", suffix: "", label: "Phase 1 plots" },
-  { icon: "GridFour", value: "3,000", suffix: "", label: "Total planned plots" },
+  { icon: "GridFour", value: "2,336", suffix: "", label: "Total plots in the scheme" },
+  { icon: "Ruler", value: "98", suffix: "", label: "500 sq.m plots" },
+  { icon: "Ruler", value: "76", suffix: "", label: "300 sq.m plots" },
+  { icon: "House", value: "2,162", suffix: "", label: "150 sq.m plots" },
 ];
-
-export const scale = {
-  phase1: "1,000",
-  phase1Label: "Phase 1 plots",
-  total: "3,000",
-  totalLabel: "Total planned plots",
-  percent: 33,
-  progressLabel: "Phase 1 underway",
-};
 
 export const plotTypes = [
   {
     key: "500sqm",
     icon: "Ruler",
     title: "500 sq.m Plots",
-    body: "The larger plot format, laid out along the scheme's main internal roads.",
+    body: "98 plots in the larger format, laid out along the scheme's main internal roads.",
     image: "/images/jk-illust-d-plot-500sqm.png",
     alt: "A miniature architectural site model of a larger residential plot",
+  },
+  {
+    key: "300sqm",
+    icon: "Ruler",
+    title: "300 sq.m Plots",
+    body: "76 mid-size plots, positioned along select road frontages across the scheme.",
+    image: "/images/jk-illust-d-plot-300sqm.png",
+    alt: "A miniature architectural site model of a mid-size residential plot",
   },
   {
     key: "150sqm",
     icon: "House",
     title: "150 sq.m Plots",
-    body: "A compact plot format for buyers seeking a smaller, more affordable footprint.",
+    body: "2,162 plots in the compact format, for buyers seeking a smaller, more affordable footprint.",
     image: "/images/jk-illust-d-plot-150sqm.png",
     alt: "A miniature architectural site model of a compact residential plot",
   },
